@@ -1,0 +1,90 @@
+body{
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+header{
+    display: grid;
+    grid-template-rows: 150px 60px;
+    background-color: powderblue;
+    color: rgb(61, 61, 61);
+}
+
+.imgandname{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#studentname{
+    margin: 0 1.3rem 0 2rem;
+}
+
+h1{
+    font-family: "Lora", serif;
+    font-weight: 600;
+    color: rgb(61, 61, 61);
+    margin: 0 100% 0 0;
+
+}
+
+.profile{
+    margin: 0 0 0 1rem;
+    box-shadow: 0 0 10px rgb(60, 60, 60);
+}
+
+nav{
+    grid-row: 2;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Lora", serif;
+    font-weight: 400;
+    font-size: larger;
+    list-style: none;
+    align-items: center;
+    background-color: rgb(216, 214, 214);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(61, 61, 61);
+}
+
+main{
+    background-color: rgb(248, 245, 245);
+    padding: .9rem 3rem 1rem 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2{
+    font-family: "Lora", serif;
+    font-weight: 600;
+    color: rgb(61, 61, 61);
+    background-color: powderblue;
+}
+
+.coursework{
+    width: 35rem;
+    text-align: center;
+    margin: 0 1rem 0 0;
+}
+
+.castle_gardens{
+    text-align: center;
+}
+
+.certificate{
+    width: 54rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+footer{
+    color: rgb(61, 61, 61);
+    background-color: rgb(248, 245, 245);
+    padding: 2rem;
+    text-align: center;
+    font-family: "Lora", serif;
+    font-weight: 600;
+}
