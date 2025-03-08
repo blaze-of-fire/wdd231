@@ -18,6 +18,9 @@ header{
 
 #studentname{
     margin: 0 1.3rem 0 2rem;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: xx-large;
 }
 
 h1{
