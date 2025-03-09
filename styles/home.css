@@ -4,8 +4,7 @@ body{
 }
 
 header{
-    display: grid;
-    grid-template-rows: 150px 60px;
+    display: block;
     background-color: powderblue;
     color: rgb(61, 61, 61);
 }
@@ -14,6 +13,21 @@ header{
     display: flex;
     justify-content:center;
     align-items: center;
+}
+
+#menu{
+    position: absolute;
+    top: 1rem; right: 1rem;
+    text-align: center;
+    font-size: larger;
+}
+
+#menu::before{
+    content: "☰";
+}
+
+#menu.open::before{
+    content: "X";
 }
 
 #studentname{
@@ -32,25 +46,43 @@ h1{
 }
 
 .profile{
-    margin: 0 0 0 1rem;
+    margin: 1rem 0 1rem 1rem;
     box-shadow: 0 0 10px rgb(60, 60, 60);
 }
 
 nav{
-    grid-row: 2;
-    display: flex;
-    justify-content: space-around;
+    display: none;
     font-family: "Lora", serif;
     font-weight: 400;
     font-size: larger;
     list-style: none;
-    align-items: center;
+    text-align: center;
     background-color: rgb(216, 214, 214);
+}
+
+nav::before{
+    display: none;
+}
+
+nav.open{
+    display: block;
+    margin: 0 auto;
+}
+
+.open a{
+    display: inherit;
 }
 
 a{
     text-decoration: none;
     color: rgb(61, 61, 61);
+    margin-bottom: .5rem;
+    padding: 1rem;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    background-color: rgb(139, 218, 229);
 }
 
 main{

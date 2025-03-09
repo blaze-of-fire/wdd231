@@ -1,0 +1,62 @@
+@media screen and (min-width: 750px) {
+    header{
+        display: grid;
+        grid-template-rows: 150px 40px;
+        background-color: powderblue;
+        color: rgb(61, 61, 61);
+    }
+
+    #menu{
+        display: none;
+    }
+
+    .profile{
+        margin: 0 0 0 1rem;
+        box-shadow: 0 0 10px rgb(60, 60, 60);
+    }
+
+    nav{
+        grid-row: 2;
+        height: 40px;
+        font-family: "Lora", serif;
+        display: flex;
+        justify-content: space-around;
+        font-weight: 400;
+        font-size: larger;
+        list-style: none;
+        padding-top: 15px;
+    }
+
+    nav.open{
+        grid-row: 2;
+        height: 55px;
+        font-family: "Lora", serif;
+        display: flex;
+        justify-content: space-around;
+        font-weight: 400;
+        font-size: larger;
+        list-style: none;
+        padding-top: 0px;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    nav::before{
+        display: flex;
+    }
+
+    a{
+        padding: .96rem;
+    }
+
+    .open a{
+        padding: .96rem;
+        display: inherit;
+        background-color: rgb(216, 214, 214);
+    }
+
+    .navigation{
+        background-color: rgb(216, 214, 214);
+        padding: 0;
+    }
+}
