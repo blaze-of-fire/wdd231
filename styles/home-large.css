@@ -55,8 +55,20 @@
         background-color: rgb(216, 214, 214);
     }
 
-    .navigation{
-        background-color: rgb(216, 214, 214);
-        padding: 0;
+    .coursework{
+        width: 35rem;
+        text-align: center;
+        margin: 0 1rem 0 0;
+    }
+
+    .castle_gardens{
+        width: fit-content;
+        text-align: center;
+    }
+    
+    .certificate{
+        width: 54rem;
+        text-align: center;
+        margin: 0 auto;
     }
 }
