@@ -38,8 +38,9 @@
         font-weight: 400;
         font-size: larger;
         list-style: none;
-        padding-top: 0px;
+        padding-top: 0;
         margin-top: 0;
+        padding-left: 0;
     }
 
     .navigation::before{
