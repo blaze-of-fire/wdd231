@@ -76,4 +76,74 @@ const courses = [
         ],
         completed: false
     }
-]
+];
+
+const certificate = document.querySelector(".certificate");
+const h2 = document.querySelector(".certificate_h2");
+
+allButton = document.createElement("button");
+cseButton = document.createElement("button");
+
+wddButton = document.createElement("button");
+buttonDiv = document.createElement("div");
+
+
+allButton.textContent = "All";
+cseButton.textContent = "CSE";
+wddButton.textContent = "WDD";
+
+buttonDiv.append(allButton, cseButton, wddButton)
+certificate.appendChild(buttonDiv)
+courseFigure = document.createElement("figure");
+
+function DisplayCourses(courses){
+    courses.forEach((course) => {
+        courseSubject = document.createElement("p");
+        courseCredits = document.createElement("p");
+
+        courseNumber = document.createElement("p");
+        courseDiv = document.createElement("div");
+
+        courseSubject.textContent = course.subject;
+        courseNumber.textContent = `${course.number}`;
+        courseNumber.classList.add("number");
+
+        courseCredits.textContent = `credits: ${course.credits}`;
+        courseCredits.classList.add("credits");
+
+        courseDiv.append(courseSubject, courseNumber, courseCredits);
+        courseDiv.classList.add("courses");
+
+        if (course.completed){
+            courseDiv.style.backgroundColor = "rgb(112, 202, 214)"
+        }
+        else{
+            courseDiv.style.backgroundColor = "rgb(204, 209, 209)"
+        }
+        courseFigure.append(courseDiv);
+    });
+certificate.appendChild(courseFigure)
+};
+
+function clear(element){
+    element.innerHTML = "";
+}
+
+allButton.addEventListener("click", () =>{
+    clear(courseFigure);
+    DisplayCourses(courses);
+});
+
+cseButton.addEventListener("click", () =>{
+    const filteredCourses = courses.filter((course) => course.subject == 'CSE')
+    clear(courseFigure);
+    DisplayCourses(filteredCourses);
+});
+
+wddButton.addEventListener("click", () =>{
+    const filteredCourses = courses.filter((course) => course.subject == 'WDD')
+    clear(courseFigure);
+    DisplayCourses(filteredCourses);
+});
+
+DisplayCourses(courses);

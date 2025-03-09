@@ -62,13 +62,21 @@
     }
 
     .castle_gardens{
-        width: fit-content;
+        width: 17.5rem;
         text-align: center;
     }
     
     .certificate{
-        width: 54rem;
         text-align: center;
-        margin: 0 auto;
+        margin: 1rem 0 1rem 0;
+    }
+
+    figure{
+        display: flex;
+        flex-wrap: wrap;
+        justify-self: center;
+        justify-content: space-around;
+        align-content: center;
+        width: 45rem;
     }
 }
