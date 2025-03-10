@@ -73,6 +73,10 @@
         margin: 1rem 0 1rem 0;
     }
 
+    button{
+        width: 100px;
+    }
+
     figure{
         display: flex;
         flex-wrap: wrap;
@@ -80,5 +84,13 @@
         justify-content: space-around;
         align-content: center;
         width: 45rem;
+    }
+
+    .courses{
+        margin-left: 1rem;
+    }
+
+    .totalcredits{
+
     }
 }

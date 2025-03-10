@@ -122,6 +122,13 @@ function DisplayCourses(courses){
         }
         courseFigure.append(courseDiv);
     });
+    const credits = courses.reduce((total, course) => total + course.credits, 0);
+
+const totalCredits = document.createElement("p");
+totalCredits.textContent = `Total Credits: ${credits}`;
+totalCredits.classList.add("totalcredits")
+courseFigure.append(totalCredits);
+
 certificate.appendChild(courseFigure)
 };
 
@@ -129,9 +136,11 @@ function clear(element){
     element.innerHTML = "";
 }
 
+
+
 allButton.addEventListener("click", () =>{
     clear(courseFigure);
-    DisplayCourses(courses);
+    DisplayCourses(courses);    
 });
 
 cseButton.addEventListener("click", () =>{
