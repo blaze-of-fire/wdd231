@@ -6,6 +6,10 @@
         color: rgb(61, 61, 61);
     }
 
+    h1{
+    margin: 0 100% 0 0;
+    }
+
     #menu{
         display: none;
     }
@@ -26,7 +30,7 @@
         background-color: rgb(139, 218, 229);
     }
 
-    nav{
+    #animateme{
         display: block;
         font-family: "Lora", serif;
         font-weight: 400;

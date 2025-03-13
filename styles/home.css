@@ -54,7 +54,7 @@ h1{
     font-family: "Lora", serif;
     font-weight: 600;
     color: var(--text-and-atags-color);
-    margin: 0 100% 0 0;
+    margin: -2rem 100% 0 0;
 
 }
 
@@ -67,28 +67,24 @@ nav{
     display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.5s ease-out;
-    margin-top: -1rem;
+    background-color: var(--main-and-footer-backgroundcolor);
 }
 
 nav ul {overflow: hidden}
 
 nav.open{
-    display: block;
+    grid-template-rows: 1fr;
+    margin-top: 0;
     font-family: "Lora", serif;
     font-weight: 400;
     font-size: medium;
+    text-align: center;
     background-color: rgb(216, 214, 214);
 }
 
-
-.open a{
-    display: inherit;
-}
-
-a{
+li a{
     text-decoration: none;
     color: var(--text-and-atags-color);
-    margin-bottom: .5rem;
     padding: 1rem;
 }
 
