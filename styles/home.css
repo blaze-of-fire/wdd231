@@ -63,26 +63,23 @@ h1{
     box-shadow: 0 0 10px var(--text-and-atags-color);
 }
 
-.navigation{
-    display: none;
+nav{
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+    margin-top: -1rem;
+}
+
+nav ul {overflow: hidden}
+
+nav.open{
+    display: block;
     font-family: "Lora", serif;
     font-weight: 400;
-    font-size: larger;
-    list-style: none;
-    text-align: center;
+    font-size: medium;
     background-color: rgb(216, 214, 214);
 }
 
-.navigation::before{
-    display: none;
-}
-
-.navigation.open{
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    padding-left: 0;
-}
 
 .open a{
     display: inherit;
@@ -93,6 +90,10 @@ a{
     color: var(--text-and-atags-color);
     margin-bottom: .5rem;
     padding: 1rem;
+}
+
+ul.navigation{
+    list-style-type: none;
 }
 
 nav a:hover{

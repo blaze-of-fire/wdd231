@@ -15,46 +15,31 @@
         box-shadow: 0 0 10px rgb(60, 60, 60);
     }
 
-    .navigation{
-        grid-row: 2;
-        height: 40px;
-        font-family: "Lora", serif;
+    ul.navigation{
         display: flex;
         justify-content: space-around;
-        font-weight: 400;
-        font-size: larger;
-        list-style: none;
-        padding-top: 15px;
-        margin-top: 0;
-        padding-left: 0;
+        align-content: center;
+        padding: 1rem;
     }
 
-    .navigation.open{
-        grid-row: 2;
-        height: 55px;
+    ul.navigation a:hover{
+        background-color: rgb(139, 218, 229);
+    }
+
+    nav{
+        display: block;
         font-family: "Lora", serif;
-        display: flex;
-        justify-content: space-around;
         font-weight: 400;
-        font-size: larger;
-        list-style: none;
-        padding-top: 0;
-        margin-top: 0;
-        padding-left: 0;
-    }
-
-    .navigation::before{
-        display: flex;
-    }
-
-    a{
-        padding: .96rem;
-    }
-
-    .open a{
-        padding: .96rem;
-        display: inherit;
+        font-size: medium;
+        margin-top: -1rem;
         background-color: rgb(216, 214, 214);
+    }
+
+    nav.open{
+        display: block;
+        font-family: "Lora", serif;
+        font-weight: 400;
+        font-size: medium;
     }
 
     .coursework{
@@ -71,10 +56,6 @@
     .certificate{
         text-align: center;
         margin: 1rem 0 1rem 0;
-    }
-
-    button{
-        width: 100px;
     }
 
     figure{
