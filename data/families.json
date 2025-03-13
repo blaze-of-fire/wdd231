@@ -1,0 +1,23 @@
+{
+    "family-name": "Howard",
+    "moved-in": "3/4/25",
+    "number-records/people": "3",
+    "visited-bishopric": true,
+    "family-members": [
+        {
+            "name": "Carter",
+            "gender": "M",
+            "birthday": "2/25/2010"
+        },
+        {
+            "name": "Bridger",
+            "gender": "M",
+            "birthday": "2/23/2009"
+        },
+        {
+            "name": "Chase",
+            "gender": "M",
+            "birthday": "2/21/2001"
+        }
+    ]
+}

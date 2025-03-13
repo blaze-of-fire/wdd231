@@ -1,0 +1,38 @@
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+h1{
+    color: rgb(27, 49, 177);
+    text-align: center;
+}
+
+main{
+    max-width: 85rem;
+    margin: 0 auto;
+}
+
+#cards{
+    display: grid;
+    grid-gap: .15rem .5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    background-color: rgb(221, 219, 219);
+    padding: 1.5rem;
+    box-shadow: 0 0 30px gray;
+    }
+
+.card{
+    text-align: center;
+    background-color: rgb(189, 186, 186);
+    width: 100%;
+    border: 2px solid rgb(156, 154, 154);
+}
+
+.name{
+    color: rgb(75, 92, 192);
+}
+
+.portrait{
+    box-shadow: 0 0 20px rgb(83, 83, 83);
+}
