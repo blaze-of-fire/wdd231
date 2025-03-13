@@ -25,17 +25,21 @@ header{
     position: absolute;
     top: 0rem; right: 0rem;
     text-align: center;
-    font-size: larger;
+    font-size: x-large;
+    width: 30px;
+    background-color: var(--header-and-backgroundcolor);
+    border: 1px solid var(--header-and-backgroundcolor);
+    color: var(--text-and-atags-color);
 }
 
 #menu::before{
     content: "☰";
-    width: fit-content;
+    width: 30px;
 }
 
 #menu.open::before{
     content: "X";
-    width: fit-content;
+    width: 30px;
 }
 
 #studentname{
