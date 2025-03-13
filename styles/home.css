@@ -24,7 +24,7 @@ header{
 
 #menu{
     position: absolute;
-    top: 0rem; right: 0rem;
+    top: 0rem; right: .5rem;
     text-align: center;
     font-size: x-large;
     width: 30px;
@@ -54,8 +54,7 @@ h1{
     font-family: "Lora", serif;
     font-weight: 600;
     color: var(--text-and-atags-color);
-    margin: -2rem 100% 0 0;
-
+    margin:0 100% 0 0;
 }
 
 .profile{
@@ -67,14 +66,14 @@ nav{
     display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.5s ease-out;
-    background-color: var(--main-and-footer-backgroundcolor);
+    text-align: center;
+    background-color: rgb(216, 214, 214);
 }
 
 nav ul {overflow: hidden}
 
 nav.open{
     grid-template-rows: 1fr;
-    margin-top: 0;
     font-family: "Lora", serif;
     font-weight: 400;
     font-size: medium;
@@ -82,17 +81,23 @@ nav.open{
     background-color: rgb(216, 214, 214);
 }
 
-li a{
+a{
     text-decoration: none;
     color: var(--text-and-atags-color);
+}
+
+li{
+    margin-left: -2.5rem;
     padding: 1rem;
 }
 
 ul.navigation{
+    text-align: center;
     list-style-type: none;
+    margin: 0;
 }
 
-nav a:hover{
+nav li:hover{
     text-decoration: underline;
     background-color: rgb(139, 218, 229);
 }
