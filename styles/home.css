@@ -13,6 +13,7 @@ header{
     display: block;
     background-color: var(--header-and-backgroundcolor);
     color: var(--text-and-atags-color);
+    height: 9.5rem;
 }
 
 .imgandname{
