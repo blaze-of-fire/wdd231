@@ -1,7 +1,7 @@
 :root{
     --brown-main-color: #59330D;
-    --yellow-secondary-color: #FEE401;
-    --main-background-color: #e9c35b;
+    --off-white-card-color: #f7f0b7;
+    --main-background-color: #f8c742;
     --black-secondary-color: black;
     --white-secondary-color: white;
 }
@@ -79,20 +79,31 @@ ul{
 }
 
 nav li:hover{
-    background-color: #251505;
+    background-color: #41250a;
 }
 
 main{
-    height: 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 3rem;
     color: var(--brown-main-color);
     background-color: var(--main-background-color);
+}
+
+section{
+    margin-top: 1rem;
+    background-color: var(--off-white-card-color);
+    border: 2px solid rgb(185, 160, 49);
+    box-shadow: 0 0 10px rgb(92, 91, 91);
+    min-width: fit-content;
 }
 
 footer{
     color: var(--white-secondary-color);
     background-color: var(--brown-main-color);
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
 
