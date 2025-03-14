@@ -1,0 +1,21 @@
+@media screen and (min-width: 700px) {
+    ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    nav{
+        display: block;
+    }
+
+    li{
+        padding: 1rem;
+        width: 18rem;
+        text-align: center;
+        margin-left: -2.5rem;
+    }
+}
