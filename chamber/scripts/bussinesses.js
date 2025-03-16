@@ -13,6 +13,7 @@ const displayBussinesses = (bussinesses) => {
         let card = document.createElement("section");
         let name = document.createElement("p");
         let image_url = document.createElement("img");
+        let image_div = document.createElement("div")
 
         let phone_number = document.createElement("p");
         let address = document.createElement("p");
@@ -28,36 +29,37 @@ const displayBussinesses = (bussinesses) => {
             image_url = null
         }
         
-        image_url.setAttribute("src", `${bussiness.image_or_icon_url}`)
-        image_url.setAttribute("alt", `${bussiness.bussiness_name}`)
-        image_url.setAttribute("width", "100")
-        image_url.setAttribute("height", "auto")
+        image_url.setAttribute("src", `${bussiness.image_or_icon_url}`);
+        image_url.setAttribute("alt", `${bussiness.bussiness_name}`);
+        image_url.setAttribute("width", "175");
+        image_url.setAttribute("height", "auto");
 
-
-    
         phone_number.textContent = `${bussiness.phone_number}`;
         phone_number.setAttribute("class", "phone_number");
         phone_number.style.color = "black";
+        phone_number.setAttribute("id", "phone_number");
 
         address.textContent =   `${bussiness.address}`;
         address.setAttribute("class", "address");
         address.style.color = "black";
+        address.setAttribute("id", "address");
 
         website_url.setAttribute("href", bussiness.website_url);
-        website_url.textContent = `Website: ${bussiness.webpage_nickname}`
+        website_url.textContent = `Website: ${bussiness.website_nickname}`
         website_url.style.color = "black";
 
         website_url.style.fontSize = "medium";
-        website_url.style.marginLeft = "-1rem"
         membership_level.textContent = `${bussiness.membership_level}`;
+        ul.setAttribute("id", "ul");
         
-
+        image_div.setAttribute("id", "image_div");
         name.textContent = `${bussiness.bussiness_name}`;
 
+        image_div.append(image_url);
         link.append(website_url);
         ul.append(link);
         card.setAttribute("class", "card");
-        card.append(image_url, address, phone_number, ul, membership_level);
+        card.append(image_div, address, phone_number, ul, membership_level);
         cards.append(card);
     });
 };

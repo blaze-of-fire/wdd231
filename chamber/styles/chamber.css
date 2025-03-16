@@ -98,14 +98,34 @@ main{
 }
 
 section{
+    display: grid;
+    grid-template-rows: 200px 40px 40px 65px 40px;
     padding: 1rem;
     background-color: var(--off-white-card-color);
     border: 2px solid rgb(185, 160, 49);
     box-shadow: 0 0 10px rgb(92, 91, 91);
     min-width: fit-content;
-    text-align: center;
     font-family: "Lora", serif;
     font-weight: 400;
+}
+
+#image_div{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#address{
+    margin: 0 auto;
+}
+
+#phone_number{
+    margin: 0 auto;
+}
+
+#ul{
+    margin: 0 auto;
 }
 
 footer{
