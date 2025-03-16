@@ -22,12 +22,7 @@ const displayBussinesses = (bussinesses) => {
 
         let website_url = document.createElement("a");
         let membership_level = document.createElement("p");
-
         name.setAttribute("class", "name");
-
-        if (bussiness.image_or_icon_url == ""){
-            image_url = null
-        }
         
         image_url.setAttribute("src", `${bussiness.image_or_icon_url}`);
         image_url.setAttribute("alt", `${bussiness.bussiness_name}`);
@@ -45,7 +40,7 @@ const displayBussinesses = (bussinesses) => {
         address.setAttribute("id", "address");
 
         website_url.setAttribute("href", bussiness.website_url);
-        website_url.textContent = `Website: ${bussiness.website_nickname}`
+        website_url.textContent = `Website: ${bussiness.website_nickname}`;
         website_url.style.color = "black";
 
         website_url.style.fontSize = "medium";
