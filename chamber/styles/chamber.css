@@ -84,19 +84,28 @@ nav li:hover{
 
 main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
     padding: 3rem;
     color: var(--brown-main-color);
     background-color: var(--main-background-color);
 }
 
+#cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+
+}
+
 section{
-    margin-top: 1rem;
+    padding: 1rem;
     background-color: var(--off-white-card-color);
     border: 2px solid rgb(185, 160, 49);
     box-shadow: 0 0 10px rgb(92, 91, 91);
     min-width: fit-content;
+    text-align: center;
+    font-family: "Lora", serif;
+    font-weight: 400;
 }
 
 footer{
