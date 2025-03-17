@@ -33,9 +33,7 @@ const displayBussinesses = (bussinesses) => {
             image_url.setAttribute("alt", `${bussiness.bussiness_name} Image or logo not available`);
             let no_image = document.createElement("p");
             no_image.textContent = `Image or logo not available`;
-            no_image.style.alignSelf = "baseline";
-            no_image.style.width = "200px";
-            image_url.style.width = "50px";
+            image_div.style.display = "grid";
             image_div.appendChild(no_image);
             image_div.st
         }
