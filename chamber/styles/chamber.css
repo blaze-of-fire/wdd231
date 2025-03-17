@@ -83,24 +83,25 @@ nav li:hover{
 }
 
 main{
-    display: grid;
     grid-gap: 1rem;
-    padding: 3rem;
+    padding: 1.5rem 0;
     color: var(--brown-main-color);
     background-color: var(--main-background-color);
 }
 
 #cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
     grid-gap: 1rem;
 
 }
 
 section{
     display: grid;
-    grid-template-rows: 200px 40px 40px 65px 40px;
-    padding: 1rem;
+    grid-template-rows: 200px 40px 40px 80px 40px;
+    min-width: 250px;
+    height: 25rem;
+    padding: .5rem;
     background-color: var(--off-white-card-color);
     border: 2px solid rgb(185, 160, 49);
     box-shadow: 0 0 10px rgb(92, 91, 91);
@@ -109,23 +110,25 @@ section{
     font-weight: 400;
 }
 
-#image_div{
+.image_div{
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#address{
+.address{
     margin: 0 auto;
 }
 
-#phone_number{
+.phone_number{
     margin: 0 auto;
 }
 
-#ul{
+.ul{
+    margin-left: -3rem;
     margin: 0 auto;
+    font-size: smaller;
 }
 
 footer{

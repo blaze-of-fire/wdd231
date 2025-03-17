@@ -32,23 +32,25 @@ const displayBussinesses = (bussinesses) => {
         phone_number.textContent = `${bussiness.phone_number}`;
         phone_number.setAttribute("class", "phone_number");
         phone_number.style.color = "black";
-        phone_number.setAttribute("id", "phone_number");
 
         address.textContent =   `${bussiness.address}`;
         address.setAttribute("class", "address");
         address.style.color = "black";
-        address.setAttribute("id", "address");
+        address.setAttribute("class", "address");
 
         website_url.setAttribute("href", bussiness.website_url);
         website_url.textContent = `Website: ${bussiness.website_nickname}`;
         website_url.style.color = "black";
 
-        website_url.style.fontSize = "medium";
+        website_url.setAttribute("class", "website_url")
         membership_level.textContent = `${bussiness.membership_level}`;
-        ul.setAttribute("id", "ul");
+        ul.setAttribute("class", "ul");
         
-        image_div.setAttribute("id", "image_div");
+        image_div.setAttribute("class", "image_div");
         name.textContent = `${bussiness.bussiness_name}`;
+        link.style.marginLeft = "-8rem";
+        link.style.marginTop = "-1rem";
+        link.style.width = "230px";
 
         image_div.append(image_url);
         link.append(website_url);
