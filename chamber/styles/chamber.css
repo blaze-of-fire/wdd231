@@ -98,7 +98,7 @@ main{
 
 section{
     display: grid;
-    grid-template-rows: 200px 40px 40px 80px 40px;
+    grid-template-rows: 200px 40px 40px 60px 40px;
     height: 25rem;
     padding: .5rem;
     background-color: var(--off-white-card-color);
@@ -134,7 +134,7 @@ section{
 
 .li{
     padding: 0rem;
-    margin: -1rem 0 0 -1rem;
+    margin: 0;
 }
 
 .website_url{

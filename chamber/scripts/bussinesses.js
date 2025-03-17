@@ -29,15 +29,6 @@ const displayBussinesses = (bussinesses) => {
         image_url.setAttribute("width", "175");
         image_url.setAttribute("height", "auto");
 
-        if (bussiness.image_or_icon_url == "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Blanco_landscape.svg/120px-Blanco_landscape.svg.png?20091119140937"){
-            image_url.setAttribute("alt", `${bussiness.bussiness_name} Image or logo not available`);
-            let no_image = document.createElement("p");
-            no_image.textContent = `Image or logo not available`;
-            image_div.style.display = "grid";
-            image_div.appendChild(no_image);
-            image_div.st
-        }
-
         phone_number.textContent = `${bussiness.phone_number}`;
         phone_number.setAttribute("class", "phone_number");
         phone_number.style.color = "black";
