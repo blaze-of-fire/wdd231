@@ -27,7 +27,7 @@ header{
 
 h1{
     color: var(--black-secondary-color);
-    font-family: "Lora", serif;
+    font-family: "Agbalumo", system-ui;
     font-weight: 400;
     text-align: center;
 }
