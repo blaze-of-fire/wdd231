@@ -19,21 +19,21 @@
             "membership_level": 3
         },
         {
-            "image_or_icon_url": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-1/481078317_122128128266608271_579696002294407118_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=1d2534&_nc_ohc=I8us-JPsJYgQ7kNvgEgxSWc&_nc_oc=AdjDl2N8jA5Upn5DYXxHBQ0QuwbuFdbChzKWFuCqrTs484igBQaQybzmv0dIp9Y-tzU&_nc_zt=24&_nc_ht=scontent-sea1-1.xx&_nc_gid=Moo1KQ-UZrqNhjprrmznOQ&oh=00_AYH7s8d6I4ZdWbQQqoVNGcoW9RBUNAxRyuddmlyEOyviGA&oe=67DA4757",
-            "bussiness_name": "El Equipo Suyo Real Estate",
-            "address": "131 E Main St Rexburg, ID 83440",
-            "phone_number": "208-604-4245",
-            "website_url": "https://carsendraper.idahoagents.com/",
-            "website_nickname": "carsendraper.idahoagents.com/",
-            "membership_level": 3
-        },
-        {
             "image_or_icon_url": "https://static.wixstatic.com/media/582e1e_b3883d008dae4352baff48c5699f2838~mv2.jpg/v1/fill/w_193,h_124,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Silverado%20Estates%20Logo%20black.jpg",
             "bussiness_name": "Silverado Estates",
             "address": "285 N 2340 E Saint Anthony, ID 83445",
             "phone_number": "208-313-1566",
             "website_url": "https://www.silveradoestatesid.com/",
             "website_nickname": "www.silveradoestatesid.com/",
+            "membership_level": 3
+        },
+        {
+            "image_or_icon_url": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-1/481078317_122128128266608271_579696002294407118_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=1d2534&_nc_ohc=I8us-JPsJYgQ7kNvgEgxSWc&_nc_oc=AdjDl2N8jA5Upn5DYXxHBQ0QuwbuFdbChzKWFuCqrTs484igBQaQybzmv0dIp9Y-tzU&_nc_zt=24&_nc_ht=scontent-sea1-1.xx&_nc_gid=Moo1KQ-UZrqNhjprrmznOQ&oh=00_AYH7s8d6I4ZdWbQQqoVNGcoW9RBUNAxRyuddmlyEOyviGA&oe=67DA4757",
+            "bussiness_name": "El Equipo Suyo Real Estate",
+            "address": "131 E Main St Rexburg, ID 83440",
+            "phone_number": "208-604-4245",
+            "website_url": "https://carsendraper.idahoagents.com/",
+            "website_nickname": "carsendraper.idahoagents.com/",
             "membership_level": 3
         },
         {
