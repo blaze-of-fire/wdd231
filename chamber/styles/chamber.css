@@ -13,15 +13,23 @@ body{
 
 header{
     background-color: var(--brown-main-color);
+    padding: 1rem;
+    
+}
+
+#title{
+    grid-column: 2;
     color: var(--white-secondary-color);
     font-family: "Lora", serif;
     font-weight: 400;
-    padding: 1rem;
     text-align: center;
 }
 
 h1{
-    grid-column: 2;
+    color: var(--black-secondary-color);
+    font-family: "Lora", serif;
+    font-weight: 400;
+    text-align: center;
 }
 
 #menu{
