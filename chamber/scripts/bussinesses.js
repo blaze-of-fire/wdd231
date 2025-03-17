@@ -30,7 +30,13 @@ const displayBussinesses = (bussinesses) => {
         image_url.setAttribute("height", "auto");
 
         if (bussiness.image_or_icon_url == "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Blanco_landscape.svg/120px-Blanco_landscape.svg.png?20091119140937"){
-            image_url.setAttribute("alt", `${bussiness.bussiness_name} Image or logo not available`)
+            image_url.setAttribute("alt", `${bussiness.bussiness_name} Image or logo not available`);
+            let no_image = document.createElement("p");
+            no_image.textContent = `Image or logo not available`;
+            no_image.style.alignSelf = "baseline";
+            no_image.style.width = "200px"
+            image_div.appendChild(no_image);
+            image_div.st
         }
 
         phone_number.textContent = `${bussiness.phone_number}`;
@@ -43,7 +49,7 @@ const displayBussinesses = (bussinesses) => {
         address.setAttribute("class", "address");
 
         website_url.setAttribute("href", bussiness.website_url);
-        website_url.textContent = `Website: ${bussiness.website_nickname}`;
+        website_url.textContent = `${bussiness.website_nickname}`;
         website_url.style.color = "black";
 
         website_url.setAttribute("class", "website_url")
@@ -52,9 +58,7 @@ const displayBussinesses = (bussinesses) => {
         
         image_div.setAttribute("class", "image_div");
         name.textContent = `${bussiness.bussiness_name}`;
-        link.style.marginLeft = "-8rem";
-        link.style.marginTop = "-1rem";
-        link.style.width = "230px";
+        link.setAttribute("class", "li")
 
         image_div.append(image_url);
         link.append(website_url);

@@ -91,7 +91,7 @@ main{
 
 #cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
     grid-gap: 1rem;
 
 }
@@ -99,7 +99,6 @@ main{
 section{
     display: grid;
     grid-template-rows: 200px 40px 40px 80px 40px;
-    min-width: 250px;
     height: 25rem;
     padding: .5rem;
     background-color: var(--off-white-card-color);
@@ -126,9 +125,20 @@ section{
 }
 
 .ul{
+    padding: 0rem;
     margin-left: -3rem;
     margin: 0 auto;
     font-size: smaller;
+    display: block;
+}
+
+.li{
+    padding: 0rem;
+    margin: -1rem 0 0 -1rem;
+}
+
+.website_url{
+    padding: 0;
 }
 
 footer{
