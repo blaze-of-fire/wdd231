@@ -32,6 +32,7 @@ h1{
     color: var(--white-secondary-color);
     background-color: var(--brown-main-color);
     border: none;
+    
 }
 
 #menu::before{
