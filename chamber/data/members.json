@@ -100,15 +100,6 @@
             "membership_level": 1
         },
         {
-            "image_or_icon_url": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/461995169_3944806572465377_6205959478986930966_n.jpg?stp=c210.0.540.540a_dst-jpg_s206x206_tt6&_nc_cat=104&ccb=1-7&_nc_sid=52bb43&_nc_ohc=5USBZfje4pEQ7kNvgEe6T0X&_nc_oc=AdizIy52DoWJC3veSdTCFW1BA1xYRPLJcM4emCbvcx4Ev5KWQn9vkdi8vN3RPGUhqgI&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&_nc_gid=FmNHJMKAd_xcr6-Y7ZFiBw&oh=00_AYGjiXNkS8iYUZcUmVkNsoCe17pQRco02tv8Pr7xBoc7wQ&oe=67DA62AC",
-            "bussiness_name": "Pike Builders",
-            "address": "2248 E 300 N Saint Anthony, ID 83445",
-            "phone_number": "208-360-5454",
-            "website_url": "https://rocketreach.co/mark-pike-email_92990049",
-            "website_nickname": "rocketreach.co/contact-pike-builders",
-            "membership_level": 1
-        },
-        {
             "image_or_icon_url": "https://cdn7.localdatacdn.com/id/saint-anthony/8024348/small/0O3c8nC206.jpg",
             "bussiness_name": "Ben Peterson Crane Services and Coal Sales",
             "address": "403 N 2700 E Saint Anthony, ID 83445",
@@ -124,6 +115,15 @@
             "phone_number": "208-450-2111",
             "website_url": "https://www.facebook.com/groups/464352993656982/posts/9039981532760709",
             "website_nickname": "www.facebook.com/freedom-fence",
+            "membership_level": 1
+        },
+        {
+            "image_or_icon_url": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/461995169_3944806572465377_6205959478986930966_n.jpg?stp=c210.0.540.540a_dst-jpg_s206x206_tt6&_nc_cat=104&ccb=1-7&_nc_sid=52bb43&_nc_ohc=5USBZfje4pEQ7kNvgEe6T0X&_nc_oc=AdizIy52DoWJC3veSdTCFW1BA1xYRPLJcM4emCbvcx4Ev5KWQn9vkdi8vN3RPGUhqgI&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&_nc_gid=FmNHJMKAd_xcr6-Y7ZFiBw&oh=00_AYGjiXNkS8iYUZcUmVkNsoCe17pQRco02tv8Pr7xBoc7wQ&oe=67DA62AC",
+            "bussiness_name": "Pike Builders",
+            "address": "2248 E 300 N Saint Anthony, ID 83445",
+            "phone_number": "208-360-5454",
+            "website_url": "https://rocketreach.co/mark-pike-email_92990049",
+            "website_nickname": "rocketreach.co/contact-pike-builders",
             "membership_level": 1
         }
     ]
