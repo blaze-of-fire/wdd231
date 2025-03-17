@@ -89,6 +89,39 @@ main{
     background-color: var(--main-background-color);
 }
 
+#grid_or_list_buttons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+#grid_button{
+    font-size: xx-large;
+    width: 55px;
+    height: 50px;
+    margin-right: 1rem;
+    color: var(--white-secondary-color);
+    background-color: var(--brown-main-color);
+    border: 1px solid var(--off-white-card-color);
+}
+
+#grid_button:hover{
+    background-color: #41250a;
+}
+
+#list_button{
+    font-size: xx-large;
+    width: 55px;
+    height: 50px;
+    color: var(--white-secondary-color);
+    background-color: var(--brown-main-color);
+    border: 1px solid var(--off-white-card-color);
+}
+
+#list_button:hover{
+    background-color: #41250a;
+}
+
 #cards{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
@@ -96,7 +129,7 @@ main{
 
 }
 
-section{
+.card{
     display: grid;
     grid-template-rows: 200px 40px 40px 60px 40px;
     height: 25rem;
@@ -126,19 +159,74 @@ section{
 
 .ul{
     padding: 0rem;
-    margin-left: -3rem;
-    margin: 0 auto;
-    font-size: smaller;
     display: block;
 }
 
 .li{
+    font-size: medium;
     padding: 0rem;
     margin: 0;
 }
 
 .website_url{
     padding: 0;
+}
+
+.m_level{
+    color: var(--black-secondary-color);
+    margin: 0 auto;
+}
+
+#list_items{
+    width: 100%;
+
+}
+
+#list_items > section:nth-child(even){
+    background: rgb(252, 229, 130);
+  }
+
+.list_item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.4fr .70fr;
+    padding: .2rem;
+    background-color: var(--off-white-card-color);
+    min-width: fit-content;
+    font-family: "Lora", serif;
+    font-weight: 400;
+}
+
+.list_name{
+    color: var(--black-secondary-color);
+    text-align: center;
+}
+
+.list_address{
+    font-size: medium;
+    text-align: center;
+}
+
+.list_phone_number{
+    font-size: medium;
+    text-align: center;
+
+}
+
+.list_li{
+    font-size: medium;
+    display: block;
+    text-align: center;
+    width: fit-content;
+}
+
+.list_website_url{
+    text-align: center;
+}
+
+.list_m_level{
+    text-align: center;
+    color: var(--black-secondary-color);
+    margin-right: .2rem;
 }
 
 footer{
