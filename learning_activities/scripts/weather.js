@@ -9,13 +9,22 @@ async function apiFetch() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            displayResults(data);
     } else {
         throw Error(await response.text());
     }
     } catch (error) {
         console.log(error);
     }
+}
+
+function displayResults(data) {
+    cTemp.innerHTML = `${data.main.temp}`;
+const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    let desc = data.weather[0].description;
+    weatherIcon.setAttribute("src", `${iconsrc}`);
+    weatherIcon.setAttribute("alt", "weatherIcon");
+    weatherIconName.textContent = `${desc}`;
 }
 
 apiFetch();
