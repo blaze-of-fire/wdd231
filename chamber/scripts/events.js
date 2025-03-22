@@ -7,7 +7,7 @@ async function getEventData() {
     displayCurrentEvents(data.current_events);
     };
 
-const displayBussinessesList = (events) => {
+const displayCurrentEvents = (events) => {
     events.forEach(event => {
 
         let eventName = document.createElement("h2");

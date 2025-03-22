@@ -265,19 +265,18 @@ footer{
     justify-self: center;
     align-items: center;
     padding: 0;
-
 }
 
 #join_us{
     display: grid;
-    grid-template-rows: .5fr .5fr 2.5fr;
+    grid-template-rows: .5fr .5fr 2fr;
     color: var(--black-secondary-color);
     background-color : rgba(127, 187, 119, 0.502);
     position: absolute;
     top: 3rem;
     max-width: 75rem;
     width: 100%;
-    padding: 0;
+    padding: 1rem 0 0 0;
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -293,6 +292,17 @@ footer{
     text-align: center;
     height: fit-content;
     background-color: var(--brown-main-color);
+}
+
+.event{
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    text-align: center;
+    background-color: var(--off-white-card-color);
+    color: var(--black-secondary-color);
+    padding: 1rem;
+    font-family: "Lora", serif;
+    font-weight: 400;
 }
 
 @media screen and (max-width: 600px) {
