@@ -19,9 +19,10 @@
         margin-left: -2.5rem;
         
     }
-}
 
-@media screen and (min-width: 390px) {
+    /* Home page */
+}
+    @media screen and (min-width: 390px) {
 
     main{
         display: grid;
@@ -43,4 +44,6 @@
         grid-gap: 1rem;
     
     }
+
+    /* Home page */
 }
