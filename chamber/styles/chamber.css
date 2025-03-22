@@ -248,3 +248,18 @@ footer{
     font-weight: 400;
 
 }
+
+/* Home page */
+
+picture{
+    display: flex;
+    justify-content: center;
+}
+
+.hero_img{
+    width: 100%;
+}
+
+#small_hero{
+    width: 100%;
+}
