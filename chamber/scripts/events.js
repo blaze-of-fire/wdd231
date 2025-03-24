@@ -8,14 +8,25 @@ async function getEventData() {
     };
 
 const displayCurrentEvents = (events) => {
+    const heading = document.createElement('h2');
+    heading.textContent = "Events";
+
+    heading.style.color = "black";
+    heading.style.fontFamily = "'Lora', serif";
+    heading.style.textAlign = "center";
+
+    heading.style.paddingBottom = "1rem";
+    currentEvents.append(heading);
     events.forEach(event => {
 
-        let eventName = document.createElement("h2");
+        let eventName = document.createElement("p");
         let eventDescription = document.createElement("p");
         let theEvent = document.createElement("section");
 
         eventName.textContent = `${event.event_name}`;
+        eventName.style.fontSize = "larger"
         eventDescription.textContent = `${event.description}`
+        eventDescription.style.fontFamily = "'Roboto', sans-serif";
         theEvent.setAttribute("class", "event");
         theEvent.append(eventName, eventDescription);
         currentEvents.append(theEvent);
