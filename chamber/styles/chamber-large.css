@@ -45,5 +45,9 @@
     
     }
 
+    #spotlight_cards{
+        grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+    }
+
     /* Home page */
 }

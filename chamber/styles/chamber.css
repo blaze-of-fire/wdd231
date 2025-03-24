@@ -292,6 +292,20 @@ footer{
     text-align: center;
     height: fit-content;
     background-color: var(--brown-main-color);
+    border-radius: 1rem;
+}
+
+#spotlights{
+    font-family: "Lora", serif;
+    font-weight: 400;
+    text-align: center;
+    color: var(--black-secondary-color);
+}
+
+#spotlight_cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    grid-gap: 1rem;
 }
 
 .event{
@@ -301,8 +315,6 @@ footer{
     background-color: var(--off-white-card-color);
     color: var(--black-secondary-color);
     padding: 1rem;
-    font-family: "Lora", serif;
-    font-weight: 400;
 }
 
 @media screen and (max-width: 600px) {
