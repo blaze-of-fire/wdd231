@@ -20,15 +20,22 @@ const displayCurrentEvents = (events) => {
     events.forEach(event => {
 
         let eventName = document.createElement("p");
+        let eventDate = document.createElement("p");
+
         let eventDescription = document.createElement("p");
         let theEvent = document.createElement("section");
 
         eventName.textContent = `${event.event_name}`;
         eventName.style.fontSize = "larger"
+
+        eventDate.textContent = `${event.event_date}`
+        eventDate.style.fontFamily = "'Roboto', sans-serif";
+
         eventDescription.textContent = `${event.description}`
         eventDescription.style.fontFamily = "'Roboto', sans-serif";
+
         theEvent.setAttribute("class", "event");
-        theEvent.append(eventName, eventDescription);
+        theEvent.append(eventName, eventDate, eventDescription);
         currentEvents.append(theEvent);
     });
 };
