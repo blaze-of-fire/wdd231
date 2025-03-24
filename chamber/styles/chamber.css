@@ -301,6 +301,7 @@ footer{
     text-align: center;
     background-color: var(--off-white-card-color);
     color: var(--black-secondary-color);
+    border: 1px solid rgb(185, 160, 49);
     padding: 1rem;
     font-family: "Lora", serif;
     font-weight: 400;

@@ -9,6 +9,7 @@ async function apiFetch() {
             throw Error(await response.text());
     } else {
         const data = await response.json();
+        console.log(data);
         displayResults(data);
     }
     } catch (error) {
@@ -18,6 +19,7 @@ async function apiFetch() {
 
 function displayResults(data) {
     data.forEach(data => {
+        console.log(data);
         let cTempP = document.createElement('p');
         let weatherIcon = document.createElement('img');
         let currentTemp = document.createElement('span');
