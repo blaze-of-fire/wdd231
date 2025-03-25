@@ -1,4 +1,4 @@
-weatherDiv = document.querySelector("#weather");
+const weatherDiv = document.querySelector("#weather");
 
 const url = "https://api.openweathermap.org/data/2.5/forecast?lat=43.91&lon=-111.68&units=imperial&appid=2261e297cafa4fe59c9b011a4aebe694";
 
