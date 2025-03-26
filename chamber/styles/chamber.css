@@ -307,6 +307,23 @@ footer{
     font-weight: 400;
 }
 
+#current_weather{
+    text-align: center;
+}
+
+#weather_container{
+    
+}
+
+#weather{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.weather_section{
+    text-align: center;
+}
+
 #spotlights{
     font-family: "Lora", serif;
     font-weight: 400;
