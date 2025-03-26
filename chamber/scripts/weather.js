@@ -37,13 +37,18 @@ function displayResults(data) {
             if (count  < 4){
             let dayH2 = document.createElement('p');
             dayH2.textContent = `${daysOfWeek[(day+count)]}`;
+            dayH2.setAttribute("class", "day");
+
             let cTempP = document.createElement('p');
             let weatherIcon = document.createElement('img');
             let currentTemp = document.createElement('span');
 
             let weatherIconName = document.createElement('p');
             let weatherSection = document.createElement('section');
-            weatherSection.setAttribute("class", "weather_section")
+            weatherSection.setAttribute("class", "weather_section");
+            if (count == 0){
+                weatherSection.setAttribute("id", "current_w");
+            }
             cTempP.textContent = `The temerature is `;
 
             currentTemp.textContent = `${object.main.temp}`;

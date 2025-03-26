@@ -21,8 +21,18 @@
     }
 
     /* Home page */
+
+    #weather{
+        display: flex;
+        justify-content: center;
+    }
+
+    .weather_section{
+        margin: 0 .5rem;
+        padding: .5rem;
+    }
 }
-    @media screen and (min-width: 390px) {
+    @media screen and (min-width: 426px) {
 
     main{
         display: grid;
@@ -50,4 +60,10 @@
     }
 
     /* Home page */
+
+    #hero_join_container{
+        padding-bottom: 0;
+    }
+
+    
 }

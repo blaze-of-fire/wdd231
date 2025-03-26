@@ -264,7 +264,7 @@ footer{
     display: flex;
     justify-self: center;
     align-items: center;
-    padding: 0;
+    padding: 1rem 0 .5rem 0;
 }
 
 #join_us{
@@ -308,20 +308,49 @@ footer{
 }
 
 #current_weather{
+    font-family: "Lora", serif;
+    font-weight: 400;
     text-align: center;
+    padding-top: .5rem;
+    color: var(--black-secondary-color);
+}
+
+#current_w{
+    width: 11rem;
+    padding: 1rem;
+    margin: 2rem auto 0 auto;
 }
 
 #weather_container{
-    
-}
+    padding-top: 1rem;
+    text-align: center;
+    font-family: "Lora", serif;
+    font-weight: 400;
+    color: var(--black-secondary-color);
 
+}
 #weather{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    display: block;
+    text-align: center;
+    padding: 0.1rem;
 }
 
 .weather_section{
     text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: var(--black-secondary-color);
+    background-color: rgb(247, 236, 223);
+    padding: 1rem;
+    width: 11rem;
+    margin: 1rem auto;
+    box-shadow: 0 0 10px rgb(92, 91, 91);
+}
+
+.day{
+    font-size: large;
+    font-family: "Lora", serif;
+    font-weight: 400;
 }
 
 #spotlights{
