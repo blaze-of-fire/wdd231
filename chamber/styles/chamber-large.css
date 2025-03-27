@@ -34,6 +34,12 @@
 }
     @media screen and (min-width: 426px) {
 
+    .logo_title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     main{
         display: grid;
         grid-gap: 1rem;

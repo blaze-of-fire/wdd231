@@ -9,14 +9,14 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.rexburgonline.com/wp-content/uploads/2016/04/DJI_0022Web-3-600x329.jpg">
     <meta property="og:url" content="https://carterqarnold.github.io/wdd231/chamber/index.html">
-    <title>Chamber of Commerce - Home</title>
+    <title>Chamber of Commerce - Join</title>
+    <link rel="icon" href="images/favicon.ico" type="image/ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
-    <link rel="icon" href="images/favicon.ico" type="images/ico">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/events.js" defer></script>
     <script src="scripts/weather.js" defer></script>
@@ -40,34 +40,43 @@
         </ul>
     </nav>
     <main>
-        <h1 id="h1">Home</h1>
-        <div id="hero_join_container">
-            <picture>
-                <source srcset="images/teton-valley-big.jpg" media="(min-width: 800px)">
-                <source srcset="images/teton-dam-flood-medium.jpg" media="(min-width: 450px)">
-                <img id="small_hero" src="images/monkey-rock-small.jpg" alt="hero_img" width="392">
-            </picture>
-            <div id="join_us">
-                <p>Join us today!</p>
-                <p>Find more about us here!</p>
-                <a id="join_link" href="join.html">Join!</a>
-            </div>
-        </div>
-        <div id="current_events">
-        </div>
-        <div id="current_weather">
-            <h2>Wilford, Idaho</h2>
-        </div>
-        <div id="weather_container">
-            <h2>3 Day Forecast</h2>
-            <div id="weather">
-            </div>
-        </div>
-        <div id="spotlights">
-            <h2>Spotlights</h2>
-        <div id="spotlight_cards">
-        </div>
-        </div>
+        <h1 id="h1">Join</h1>
+        <fieldset class="personal">
+            <form action="thankyou.html"></form>
+            <label for="fname">First Name
+                <input type="text" id="fname" name="fname" required autocomplete="given-name">
+            </label>
+            <label for="lname">Last Name
+                <input type="text" id="lname" name="lname" required autocomplete="family-name">
+            </label>
+            <label for="organization-title">Organization Title*:
+                <input type="text" id="organization-title" name="organization-title" required autocomplete="organization-title" pattern="^[A-Za-z\s\-]{7,}">
+            </label>
+            <label for="email">Email
+                <input type="email" id="email" name="email" required autocomplete="email">
+            </label>
+            <label for="phone">Phone Number
+                <input type="tel" id="phone" name="phone" required placeholder="123-456-7890" autocomplete="tel-national" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </label>
+        </fieldset>
+        <button type="submit">sub</button>
+        <!-- <fieldset class="membership">
+            <legend>Membership Level</legend>
+            <label for="non-prof">Non-Profit Membership Level</label>
+            <label for="bronze">Bronze Membership Level</label>
+            <label for=""></label>
+            <label for=""></label>
+        </fieldset> -->
+        <fieldset class="description">
+            <label for="description">Organization Description</label>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        </fieldset>
+        <section class="membership">
+            <div id="non-prof">Non-Profit Membership Level</div>
+            <div id="bronze">Bronze Membership Level</div>
+            <div id="silver">Silver Membership Level</div>
+            <div id="gold">Gold Membership Level</div>
+        </section>
     </main>
     <footer>
         <p><span id="copyright_year"></span> 🐴 Carter Arnold 🐴 Worland Wyoming</p>

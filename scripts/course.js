@@ -81,62 +81,80 @@ const courses = [
 const certificate = document.querySelector(".certificate");
 const h2 = document.querySelector(".certificate_h2");
 
-allButton = document.createElement("button");
-cseButton = document.createElement("button");
+const allButton = document.createElement("button");
+const cseButton = document.createElement("button");
 
-wddButton = document.createElement("button");
-buttonDiv = document.createElement("div");
+const wddButton = document.createElement("button");
+const buttonDiv = document.createElement("div");
 
 
 allButton.textContent = "All";
 cseButton.textContent = "CSE";
 wddButton.textContent = "WDD";
 
-buttonDiv.append(allButton, cseButton, wddButton)
-certificate.appendChild(buttonDiv)
+allButton.setAttribute("class", "three_buttons");
+cseButton.setAttribute("class", "three_buttons");
+wddButton.setAttribute("class", "three_buttons");
+
+buttonDiv.append(allButton, cseButton, wddButton);
+certificate.appendChild(buttonDiv);
 courseFigure = document.createElement("figure");
 
 function DisplayCourses(courses){
     courses.forEach((course) => {
-        courseSubject = document.createElement("p");
-        courseCredits = document.createElement("p");
+        let courseSubject = document.createElement("p");
 
-        courseNumber = document.createElement("p");
-        courseDiv = document.createElement("div");
-
+        let courseNumber = document.createElement("p");
+        let courseButton = document.createElement("button");
+        let dialog = document.createElement("dialog");
+        let content = document.createElement("p");
+        let closeButton = document.createElement("button");
         courseSubject.textContent = course.subject;
+
         courseNumber.textContent = `${course.number}`;
         courseNumber.classList.add("number");
 
-        courseCredits.textContent = `credits: ${course.credits}`;
-        courseCredits.classList.add("credits");
-
-        courseDiv.append(courseSubject, courseNumber, courseCredits);
-        courseDiv.classList.add("courses");
+        courseButton.append(courseSubject, courseNumber);
+        courseButton.classList.add("courses");
+        
+        DisplayModal(courseButton, closeButton, content, dialog);
 
         if (course.completed){
-            courseDiv.style.backgroundColor = "rgb(112, 202, 214)"
+            courseButton.style.backgroundColor = "rgb(112, 202, 214)"
         }
         else{
-            courseDiv.style.backgroundColor = "rgb(204, 209, 209)"
+            courseButton.style.backgroundColor = "rgb(204, 209, 209)"
         }
-        courseFigure.append(courseDiv);
+        courseFigure.append(courseButton, dialog);
     });
     const credits = courses.reduce((total, course) => total + course.credits, 0);
 
 const totalCredits = document.createElement("p");
 totalCredits.textContent = `Total Credits: ${credits}`;
-totalCredits.classList.add("totalcredits")
-courseFigure.append(totalCredits);
-
-certificate.appendChild(courseFigure)
+totalCredits.classList.add("totalcredits");
+certificate.appendChild(courseFigure, totalCredits);
 };
 
 function clear(element){
     element.innerHTML = "";
 }
 
+function DisplayModal(openButton, closeButton, content, dialog){
+    dialog.setAttribute("class", "course_dialog");
+    content.setAttribute("class", "course_info");
+    closeButton.setAttribute("class", "close_button");
 
+    content.textContent = 'ggggggggggggg';
+    dialog.append(content, closeButton);
+
+    openButton.addEventListener('click', () => {
+        dialog.showModal();
+    });
+
+    closeButton.addEventListener('click', () => {
+        dialog.close();
+    });
+}
 
 allButton.addEventListener("click", () =>{
     clear(courseFigure);
