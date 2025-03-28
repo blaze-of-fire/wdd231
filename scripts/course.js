@@ -86,15 +86,17 @@ const cseButton = document.createElement("button");
 
 const wddButton = document.createElement("button");
 const buttonDiv = document.createElement("div");
-
+const totalCreditsDiv = document.createElement("div");
 
 allButton.textContent = "All";
 cseButton.textContent = "CSE";
 wddButton.textContent = "WDD";
 
-allButton.setAttribute("class", "three_buttons");
-cseButton.setAttribute("class", "three_buttons");
-wddButton.setAttribute("class", "three_buttons");
+allButton.setAttribute("class", "filter_buttons");
+cseButton.setAttribute("class", "filter_buttons");
+wddButton.setAttribute("class", "filter_buttons");
+
+buttonDiv.setAttribute("id", "filter_div")
 
 buttonDiv.append(allButton, cseButton, wddButton);
 certificate.appendChild(buttonDiv);
@@ -102,11 +104,32 @@ courseFigure = document.createElement("figure");
 
 function DisplayCourses(courses){
     courses.forEach((course) => {
-        let courseSubject = document.createElement("p");
+        let courseNameNum = document.createElement("h2");
+        let courseTitle = document.createElement("h3");
+        let courseCredits = document.createElement("p");
+
+        let courseDesc = document.createElement("p");
+        let courseTech = document.createElement("p");
+
+        courseNameNum.textContent = `${course.subject} ${course.number}`;
+        courseTitle.textContent = `${course.title}`;
+        courseCredits.textContent = `${course.credits} credits`;
+
+        courseDesc.textContent = `${course.description}`;
+        courseTech.textContent = `Technology: ${course.technology}`
+
+        courseNameNum.setAttribute("class", "name_num");
+        courseTitle.setAttribute("class", "course_title");
+        courseCredits.setAttribute("class", "course_cred");
+
+        courseDesc.setAttribute("class", "course_des");
+        courseTech.setAttribute("class", "course_tech");
+        courseSubject = document.createElement("p");
 
         let courseNumber = document.createElement("p");
         let courseButton = document.createElement("button");
         let dialog = document.createElement("dialog");
+
         let content = document.createElement("p");
         let closeButton = document.createElement("button");
         courseSubject.textContent = course.subject;
@@ -115,7 +138,8 @@ function DisplayCourses(courses){
         courseNumber.classList.add("number");
 
         courseButton.append(courseSubject, courseNumber);
-        courseButton.classList.add("courses");
+        courseButton.setAttribute("class", "courses");
+        content.append(courseNameNum, courseTitle, courseCredits, courseDesc, courseTech);
         
         DisplayModal(courseButton, closeButton, content, dialog);
 
@@ -124,15 +148,19 @@ function DisplayCourses(courses){
         }
         else{
             courseButton.style.backgroundColor = "rgb(204, 209, 209)"
+            courseNameNum.style.backgroundColor = "rgb(211, 212, 212)"
         }
         courseFigure.append(courseButton, dialog);
+        courseFigure.setAttribute("id", "course_holder")
     });
     const credits = courses.reduce((total, course) => total + course.credits, 0);
 
 const totalCredits = document.createElement("p");
 totalCredits.textContent = `Total Credits: ${credits}`;
-totalCredits.classList.add("totalcredits");
-certificate.appendChild(courseFigure, totalCredits);
+totalCredits.classList.add("total_credits");
+
+totalCreditsDiv.append(totalCredits);
+certificate.append(courseFigure, totalCreditsDiv);
 };
 
 function clear(element){
@@ -144,7 +172,6 @@ function DisplayModal(openButton, closeButton, content, dialog){
     content.setAttribute("class", "course_info");
     closeButton.setAttribute("class", "close_button");
 
-    content.textContent = 'ggggggggggggg';
     dialog.append(content, closeButton);
 
     openButton.addEventListener('click', () => {
@@ -158,18 +185,21 @@ function DisplayModal(openButton, closeButton, content, dialog){
 
 allButton.addEventListener("click", () =>{
     clear(courseFigure);
+    clear(totalCreditsDiv);
     DisplayCourses(courses);    
 });
 
 cseButton.addEventListener("click", () =>{
     const filteredCourses = courses.filter((course) => course.subject == 'CSE')
     clear(courseFigure);
+    clear(totalCreditsDiv);
     DisplayCourses(filteredCourses);
 });
 
 wddButton.addEventListener("click", () =>{
     const filteredCourses = courses.filter((course) => course.subject == 'WDD')
     clear(courseFigure);
+    clear(totalCreditsDiv);
     DisplayCourses(filteredCourses);
 });
 
