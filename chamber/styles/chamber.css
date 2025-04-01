@@ -522,7 +522,7 @@ dialog{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: black;
-    font-size: larger;
+    font-size: medium;
 
 }
 
@@ -530,5 +530,5 @@ dialog{
     font-family: 'Lora', serif;
     font-weight: 400;
     color: black;
-    font-size: medium;
+    font-size: larger;
 }
