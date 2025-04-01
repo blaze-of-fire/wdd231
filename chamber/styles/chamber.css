@@ -510,7 +510,7 @@ dialog{
     border-radius: 1rem 1rem 1rem 1rem;
     animation-duration: 1.5s;
     animation-name: slide-in;
-    animation-iteration-count: 4;
+    animation-iteration-count: 2;
     animation-direction: alternate;
     overflow: hidden;
 }
@@ -523,7 +523,7 @@ dialog{
 
     to{
         translate: 0 4rem;
-        scale: 110% 1.2;
+        scale: 105% 1.2;
     }
 }
 
