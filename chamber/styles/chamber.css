@@ -22,10 +22,6 @@ header{
     text-align: center;
 }
 
-#logo{
-
-}
-
 #title{
     grid-column: 2;
     color: var(--white-secondary-color);
@@ -88,8 +84,7 @@ li{
 a{
     text-decoration: none;
     color: var(--white-secondary-color);
-    padding: 1rem;
-
+    padding: 1.5rem;
 }
 
 ul{
@@ -258,7 +253,7 @@ footer{
 
 }
 
-/* Home page */
+    /* Home page */
 
 .hero_img{
     width: 100%;
@@ -381,4 +376,82 @@ footer{
         grid-template-rows: 1fr 1fr 1fr;
         padding-bottom: .75rem;
     }
+}
+
+    /* Join page */
+
+#join_form_modal{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+}
+
+fieldset{
+    width: fit-content;
+    padding: 1rem;
+    background-color: #836e36;
+    margin: 0 auto;
+}
+
+form{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    font-family: 'Roboto', sans-serif;
+    color: var(--black-secondary-color);
+    width: 280px;
+}
+
+label{
+    margin: 1.2rem 0 .8rem 1rem;
+    color: white;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea
+{
+    padding: .5rem;
+    border-radius: 5px;
+    border: 1.5px solid var(--black-secondary-color);
+    width: 14rem;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+select{
+    padding: .5rem;
+    border-radius: 5px;
+    border: 1.5px solid var(--black-secondary-color);
+    width: 15.4rem;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+input:required{
+    border-left: 5px solid rgb(172, 12, 25);
+}
+
+input:required:valid{
+    border-left: 5px solid green;
+}
+
+button[type=submit]
+{
+    height: 2rem;
+    width: 10rem;
+    margin: 2rem auto 0 auto;
+}
+
+.membership{
+    color: white;
+    background-color: #331c06;
+    height: fit-content;
+    margin: 1.5rem auto;
+    text-align: center;
+    width: 315px;
+}
+
+.level_card{
+    
+    background-color:#59330D;
 }

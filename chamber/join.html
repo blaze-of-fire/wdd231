@@ -18,15 +18,13 @@
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/events.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/timestamp_modal.js"></script>
     <script src="scripts/date.js" defer></script>
 </head>
 <body>
     <header>
         <div class="logo_title">
-            <img id="logo" src="images/commerce-horse-logo-small.png" alt="commerce-horse-logo.png">
+            <img src="images/commerce-horse-logo.png" alt="commerce-horse-logo.png" width="200">
             <p id="title">Wilford Chamber of Commerce</p>
         </div>
         <button id="menu" aria-label="Open Menu"></button>
@@ -41,42 +39,55 @@
     </nav>
     <main>
         <h1 id="h1">Join</h1>
-        <fieldset class="personal">
-            <form action="thankyou.html"></form>
-            <label for="fname">First Name *:
-                <input type="text" id="fname" name="fname" required autocomplete="given-name">
-            </label>
-            <label for="lname">Last Name *:
-                <input type="text" id="lname" name="lname" required autocomplete="family-name">
-            </label>
-            <label for="organization-title">Organization Title *:
-                <input type="text" id="organization-title" name="organization-title" required autocomplete="organization-title" pattern="^[A-Za-z\s\-]{7,}">
-            </label>
-            <label for="email">Email *:
-                <input type="email" id="email" name="email" required autocomplete="email">
-            </label>
-            <label for="phone">Phone Number *:
-                <input type="tel" id="phone" name="phone" required placeholder="123-456-7890" autocomplete="tel-national" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-            </label>
-        </fieldset>
-        <button type="submit">Join Us</button>
-        <!-- <fieldset class="membership">
-            <legend>Membership Level</legend>
-            <label for="non-prof">Non-Profit Membership Level</label>
-            <label for="bronze">Bronze Membership Level</label>
-            <label for=""></label>
-            <label for=""></label>
-        </fieldset> -->
-        <fieldset class="description">
-            <label for="description">Organization Description</label>
-            <textarea name="description" id="description" cols="30" rows="10"></textarea>
-        </fieldset>
-        <section class="membership">
-            <div id="non-prof">Non-Profit Membership Level</div>
-            <div id="bronze">Bronze Membership Level</div>
-            <div id="silver">Silver Membership Level</div>
-            <div id="gold">Gold Membership Level</div>
-        </section>
+        <div id="join_form_modal">
+            <fieldset class="personal">
+                <form action="thankyou.html">
+                    <label for="fname">*First Name :</label>
+                        <input type="text" id="fname" name="fname" title="Enter your first name" required autocomplete="given-name">
+                    <label for="lname">*Last Name :</label>
+                        <input type="text" id="lname" name="lname" title="Enter your last name" required autocomplete="family-name">
+                    <label for="organization-title">*Your Title in the Organization :</label>
+                        <input type="text" id="organization-title" name="organization-title" title="enter your title within your organization" required autocomplete="organization-title" pattern="^[A-Za-z\s\-]{7,}">
+                    <label for="email">*Email :</label>
+                        <input type="email" id="email" name="email" title="Enter your email" required autocomplete="email">
+                    <label for="phone">*Phone Number :</label>
+                        <input type="tel" id="phone" name="phone" title="Enter your phone number" required placeholder="123-456-7890" autocomplete="tel-national" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <label for="organization">*Bussiness/Organization Name :</label>
+                        <input type="text" name="organization" title="Enter the bussiness or organization name" required autocomplete="organization">
+                    <label for="choose_membership">Membership Level :</label>
+                        <select name="choose_membership" id="choose_membership">
+                            <option value="select">Select a Membership Level</option>
+                            <option value="non-profit">Non-Profit</option>
+                            <option value="bronze">Bronze</option>
+                            <option value="silver">Silver</option>
+                            <option value="gold">Gold</option>
+                        </select>
+                    <label for="description">Organization Description :</label>
+                        <textarea name="description" id="description" cols="20" rows="5"></textarea>
+                        <input type="hidden" name="timestamp" id="timestamp">
+                    <button type="submit">Apply to Join Us</button>
+                </form>
+            </fieldset>
+            <section class="membership">
+                <h2>Membership Levels</h2>
+                <div class="level_card">
+                    <h3>Non-Profit Membership Level</h3>
+                    <button>Learn More</button>
+                </div>
+                <div class="level_card">
+                    <h3>Bronze Membership Level</h3>
+                    <button>Learn More</button>
+                </div>
+                <div class="level_card">
+                    <h3>Silver Membership Level</h3>
+                    <button>Learn More</button>
+                </div>
+                <div class="level_card">
+                    <h3>Gold Membership Level</h3>
+                    <button>Learn More</button>
+                    </div>
+            </section>
+        </div>
     </main>
     <footer>
         <p><span id="copyright_year"></span> 🐴 Carter Arnold 🐴 Worland Wyoming</p>

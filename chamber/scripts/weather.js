@@ -19,8 +19,6 @@ async function apiFetch() {
     }
 }
 
-const time = new Date();
-let day = time.getDay();
 const daysOfWeek = [
     "Sunday",
     "Monday",
@@ -33,6 +31,8 @@ const daysOfWeek = [
 
 function displayResults(data) {
     let count = 0;
+    let time = new Date();
+    let day = time.getDay();
         data.forEach(object => {
             if (count  < 4){
             let dayH2 = document.createElement('p');
@@ -49,7 +49,7 @@ function displayResults(data) {
             if (count == 0){
                 weatherSection.setAttribute("id", "current_w");
             }
-            cTempP.textContent = `The temerature is `;
+            cTempP.textContent = `The temperature is `;
 
             currentTemp.textContent = `${object.main.temp}`;
             const iconsrc = `https://openweathermap.org/img/w/${object.weather[0].icon}.png`;
