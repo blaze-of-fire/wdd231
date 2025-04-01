@@ -508,7 +508,23 @@ dialog{
     padding: 1rem;
     margin: 1rem;
     border-radius: 1rem 1rem 1rem 1rem;
+    animation-duration: 1.5s;
+    animation-name: slide-in;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+    overflow: hidden;
+}
 
+@keyframes slide-in {
+    from{
+        translate: 0 0;
+        scale: 100% 1;
+    }
+
+    to{
+        translate: 0 4rem;
+        scale: 110% 1.2;
+    }
 }
 
 /* Thankyou page */
