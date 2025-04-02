@@ -104,37 +104,23 @@ main{
     background-color: var(--main-background-color);
 }
 
+#list_description{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+}
+
 #grid_or_list_buttons{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1.5rem;
+    display: none;
 }
 
 #grid_button{
-    font-size: xx-large;
-    width: 55px;
-    height: 50px;
-    margin-right: 1rem;
-    color: var(--white-secondary-color);
-    background-color: var(--brown-main-color);
-    border: 1px solid var(--off-white-card-color);
-}
-
-#grid_button:hover{
-    background-color: #41250a;
+    display: none;
 }
 
 #list_button{
-    font-size: xx-large;
-    width: 55px;
-    height: 50px;
-    color: var(--white-secondary-color);
-    background-color: var(--brown-main-color);
-    border: 1px solid var(--off-white-card-color);
-}
-
-#list_button:hover{
-    background-color: #41250a;
+    display: none;
 }
 
 #cards{
