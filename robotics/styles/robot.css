@@ -1,0 +1,14 @@
+:root{
+    --main-orange-color: #FF6F00;
+    
+}
+
+header{
+    background-color: var(--main-orange-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+main{
+    text-align: center;
+}
