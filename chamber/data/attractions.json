@@ -1,0 +1,60 @@
+{
+    "attractions": [
+        {
+            "title": "Monkey Rock",
+            "name": "teton-river-temple.webp",
+            "image": "",
+            "address": "",
+            "description": ""
+        },
+        {
+            "title": "Sand Dunes",
+            "name": "teton-river-temple.webp",
+            "image": "",
+            "address": "",
+            "description": ""
+        },
+        {
+            "title": "Sand Bar",
+            "name": "teton-river-temple.webp",
+            "image": "",
+            "address": "",
+            "description": ""
+        },
+        {
+            "title": "Upper Mesa Falls",
+            "name": "teton-river-temple.webp",
+            "image": "",
+            "address": "",
+            "description": ""
+        },
+        {
+            "title": "Teton Dam Site",
+            "name": "teton-river-temple.webp",
+            "image": "",
+            "address": "",
+            "description": ""
+        },
+        {
+            "title": "Henry Fort Greenway",
+            "name": "teton-river-temple.webp",
+            "image": "",
+            "address": "",
+            "description": "A nice boardwalk around the lake"
+        },
+        {
+            "title": "Fremont County Golf Course",
+            "name": "teton-river-temple.webp",
+            "image": "",
+            "address": "",
+            "description": ""
+        },
+        {
+            "title": "Teton River Temple",
+            "name": "teton-river-temple.webp",
+            "image": "images/teton-river-idaho-temple-rendering",
+            "address": "111 Teton River Temple St Rexburg, Idaho  83440 United States",
+            "description": "The construction site of the teton river temple"
+        }
+    ]
+}
