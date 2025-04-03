@@ -3,6 +3,11 @@
     
 }
 
+body{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
 header{
     background-color: var(--main-orange-color);
     text-align: center;
@@ -14,9 +19,6 @@ header{
 #title{
     font-weight: bold;
     font-size: xx-large;
-}
-
-nav{
 }
 
 ul{
@@ -52,7 +54,30 @@ nav li:hover{
 }
 
 main{
+    text-align: center;
+    background-color: rgb(238, 237, 237);
+    padding: 1rem 0;
+}
+
+h1{
     font-family: "Agbalumo", system-ui;
     font-weight: 400;
+}
+
+h2{
+    font-family: 'Lora', serif;
+    font-size: 400;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+footer{
+    background-color: var(--main-orange-color);
+    padding: 1rem;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
