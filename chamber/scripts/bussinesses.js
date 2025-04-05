@@ -12,7 +12,7 @@ async function getBussninessData(grid, list) {
     if (list){
         displayBussinessesList(data.bussinesses);
     };
-}
+};
 
 const displayBussinessesGrid = (bussinesses) => {
     let cards = document.createElement("div");
