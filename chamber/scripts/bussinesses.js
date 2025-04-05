@@ -1,10 +1,10 @@
-const url1 = "https://blaze-the-fire.github.io/wdd231/chamber/data/members.json";
+const url = "https://blaze-of-fire.github.io/wdd231/chamber/data/members.json";
 const gridOrList = document.querySelector('#grid_or_list');
 const gridButton = document.getElementById("grid_button");
 const listButton = document.getElementById("list_button");
 
 async function getBussninessData(grid, list) {
-    const response = await fetch(url1);
+    const response = await fetch(url);
     const data = await response.json();
     if (grid){
         displayBussinessesGrid(data.bussinesses);
