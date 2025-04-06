@@ -1,4 +1,4 @@
-const url2 = "https://carterqarnold.github.io/wdd231/chamber/data/members.json";
+const url2 = "./data/members.json";
 const spotlightCards = document.querySelector("#spotlight_cards");
 
 async function getBussninessData() {

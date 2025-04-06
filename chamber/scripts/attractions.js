@@ -1,10 +1,11 @@
 const attractions = "./data/attractions.json";
-const sections_parent = document.querySelector('#attractions_div');
+const sections_parent = document.getElementById('the_locations');
 
 async function getAttractions() {
     const response = await fetch(attractions);
     const data = await response.json();
     displayAttractions(data.attractions);
+    console.log(data.attractions);
 }
 
 const displayAttractions = (locations) => {
@@ -13,70 +14,41 @@ const displayAttractions = (locations) => {
         let card = document.createElement("section");
         let image = document.createElement("img");
         let title = document.createElement("h2");
-        let imageDiv = document.createElement("div")
-        let address = document.createElement("p");
+        let imageFigure = document.createElement("figure")
+        let addressPart1 = document.createElement("address");
+        let addressPart2 = document.createElement("address");
         let description = document.createElement("p");
+        let button = document.createElement("button");
 
         card.setAttribute("class", "attractions_card");
         title.setAttribute("class", "attractions_title");
-        title.textContent = `hello a test ${attraction.title}`;
+        title.textContent = `${attraction.title}`;
         
         image.setAttribute("src", `${attraction.image}`);
         image.setAttribute("alt", `${attraction.name}`);
-        image.setAttribute("width", "175");
+        image.setAttribute("width", "300");
         image.setAttribute("height", "auto");
 
         description.textContent = `${attraction.description}`;
         description.setAttribute("class", "attraction_desc");
         description.style.color = "black";
 
-        address.textContent = `${attraction.address}`;
-        address.setAttribute("class", "attraction_address");
-        address.style.color = "black";
-        
-        imageDiv.setAttribute("class", "image_div");
+        addressPart1.textContent = `${attraction.address_part1}`;
+        addressPart1.setAttribute("class", "attraction_address1");
+        addressPart1.style.color = "black";
 
-        imageDiv.append(image);
-        card.append(title, imageDiv, address, description);
+        addressPart2.textContent = `${attraction.address_part2}`;
+        addressPart2.setAttribute("class", "attraction_address2");
+        addressPart2.style.color = "black";
+        
+        imageFigure.setAttribute("class", "image_figure");
+        button.textContent = `Learn More!`;
+        button.setAttribute("class", "learn_button");
+
+        imageFigure.append(image);
+        card.append(title, imageFigure, addressPart1, addressPart2, description, button);
         sections_parent.append(card);
     });
 };
 
-
-const locations = './data/discover.json';
-const cards = document.querySelector('#locations');
-
-
-async function getLocations() {
-    const response = await fetch(locations);
-    const data = await response.json();
-    displayLocations(data.cards);
-}
-
-getLocations();
-
-function displayLocations(locations) {
-    locations.forEach(location => {
-        let card = document.createElement('section');
-        let image = document.createElement('img');
-        let title = document.createElement('h2');
-        let line1 = document.createElement('p');
-        let line2 = document.createElement('p');
-        let description = document.createElement('p');
-
-        card.setAttribute('class', 'locationCard');
-        image.setAttribute('src', location.image);
-        image.setAttribute('alt', `${location.name}`);
-        image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '300');
-        image.setAttribute('height', '200');
-
-        title.textContent = `${location.name}`;    
-        line1.textContent = location.address[0].line1;
-        line2.textContent = location.address[0].line2;
-        description.textContent = location.description;
-
-        card.append(image, name, line1, line2, description);
-        cards.appendChild(card);
-    })
-}
+getAttractions();

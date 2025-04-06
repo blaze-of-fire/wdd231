@@ -1,60 +1,68 @@
 {
     "attractions": [
         {
-            "title": "Monkey Rock",
-            "name": "teton-river-temple.webp",
-            "image": "",
-            "address": "",
-            "description": ""
-        },
-        {
             "title": "Sand Dunes",
-            "name": "teton-river-temple.webp",
-            "image": "",
-            "address": "",
-            "description": ""
-        },
-        {
-            "title": "Sand Bar",
-            "name": "teton-river-temple.webp",
-            "image": "",
-            "address": "",
+            "name": "sand-dunes",
+            "image": "images/sand-dunes.webp",
+            "address_part1": "1653 E 500 N",
+            "address_part2": "St. Anthony, Idaho 83445",
             "description": ""
         },
         {
             "title": "Upper Mesa Falls",
-            "name": "teton-river-temple.webp",
-            "image": "",
-            "address": "",
-            "description": ""
-        },
-        {
-            "title": "Teton Dam Site",
-            "name": "teton-river-temple.webp",
-            "image": "",
-            "address": "",
-            "description": ""
-        },
-        {
-            "title": "Henry Fort Greenway",
-            "name": "teton-river-temple.webp",
-            "image": "",
-            "address": "",
-            "description": "A nice boardwalk around the lake"
-        },
-        {
-            "title": "Fremont County Golf Course",
-            "name": "teton-river-temple.webp",
-            "image": "",
-            "address": "",
+            "name": "upper-mesa-falls",
+            "image": "images/upper-mesa-falls.webp",
+            "address_part1": "46 Hwy 20",
+            "address_part2": "Ashton Idaho 83420",
             "description": ""
         },
         {
             "title": "Teton River Temple",
             "name": "teton-river-temple.webp",
-            "image": "images/teton-river-idaho-temple-rendering",
-            "address": "111 Teton River Temple St Rexburg, Idaho  83440 United States",
+            "image": "images/teton-river-idaho-temple-rendering.webp",
+            "address_part1": "111 Teton River Temple St",
+            "address_part2": "Rexburg, Idaho  83440 United States",
             "description": "The construction site of the teton river temple"
+        },
+        {
+            "title": "Sand Bar",
+            "name": "sand-bar",
+            "image": "images/sand-bar.webp",
+            "address_part1": "245 S 3rd E",
+            "address_part2": "St. Anthony, Idaho 83445",
+            "description": ""
+        },
+        {
+            "title": "Fremont County Golf Course",
+            "name": "fremont-county-golf-course",
+            "image": "images/fremont-county-golf-course.webp",
+            "address_part1": "674 N 2780 E",
+            "address_part2": "St. Anthony, Idaho 83445",
+            "description": ""
+        },
+        {
+            "title": "Henry Fork Greenway",
+            "name": "henry-fork-greenway",
+            "image": "images/henrys-fork-greenway.webp",
+            "address_part1": "420 North Bridge Street",
+            "address_part2": "St. Anthony, Idaho 83445",
+            "description": "A nice boardwalk around the lake"
+        },
+        {
+            "title": "Monkey Rock",
+            "name": "monkey-rock",
+            "image": "images/monkey-rock-discover.webp",
+            "address_part1": "E 350 N",
+            "address_part2": "St. Anthony, Idaho 83445",
+            "description": ""
+        },
+        {
+            "title": "Teton Dam Site",
+            "name": "teton-dam-site",
+            "image": "images/teton-dam-flood-discover.webp",
+            "address_part1": "12000 NE",
+            "address_part2": "Newdale, Idaho 83436",
+            "description": ""
         }
     ]
 }

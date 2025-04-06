@@ -77,6 +77,13 @@
     .membership{
         width: 318px;
     }
+
+    /* Discover page */
+
+    .attractions_card{
+        width: 100%;
+        margin: 0 auto;
+    }
 }
     @media screen and (min-width: 426px) {
 
@@ -122,5 +129,11 @@
     #join_form_modal{
         grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
         margin: 0 1rem 0 0;
+    }
+
+    /* Discover page */
+
+    .attractions_card{
+        width: 90%;
     }
 }

@@ -1,4 +1,4 @@
-const url = "https://blaze-of-fire.github.io/wdd231/chamber/data/members.json";
+const url = "./data/members.json";
 const gridOrList = document.querySelector('#grid_or_list');
 const gridButton = document.getElementById("grid_button");
 const listButton = document.getElementById("list_button");

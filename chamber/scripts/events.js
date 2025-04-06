@@ -1,4 +1,4 @@
-const url1 = "https://carterqarnold.github.io/wdd231/chamber/data/currentevents.json";
+const url1 = "./data/currentevents.json";
 const currentEvents = document.querySelector('#current_events');
 
 async function getEventData() {

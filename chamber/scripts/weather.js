@@ -1,4 +1,4 @@
-const weatherDiv = document.querySelector("#weather");
+const weatherDiv = document.querySelector("#weather_container");
 const cWeatherDiv = document.querySelector("#current_weather");
 let weather = document.querySelector("#weather");
 
@@ -26,7 +26,10 @@ const daysOfWeek = [
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday"
+    "Saturday",
+    "Sunday",
+    "Monday",
+    "Tuesday"
 ];
 
 function displayResults(data) {
