@@ -14,7 +14,7 @@
 .attractions_card {
     margin: 0 auto 1rem auto;
     background-color: var(--off-white-card-color);
-    box-shadow: 1px 1px 5px 1px black;
+    box-shadow: 1px 1px 5px 1px rgb(53, 53, 53);
     display: grid;
     grid-template-areas:
         "name"

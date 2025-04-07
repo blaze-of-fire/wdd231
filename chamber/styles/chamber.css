@@ -126,16 +126,6 @@
     margin-right: .2rem;
 }
 
-footer{
-    color: var(--white-secondary-color);
-    background-color: var(--brown-main-color);
-    text-align: center;
-    padding: 2rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-
-}
-
     /* Home page */
 
 .hero_img{

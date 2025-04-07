@@ -127,6 +127,16 @@ main{
     }
 }
 
+footer{
+    color: var(--white-secondary-color);
+    background-color: var(--brown-main-color);
+    text-align: center;
+    padding: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+
+}
+
 @media screen and (min-width: 426px) {
 
     .logo_title{
