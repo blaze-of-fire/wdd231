@@ -1,5 +1,12 @@
 /* Discover page */
 
+#msg_using_timestamp{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
 #the_locations {
     margin: 0 .3rem;
 }
