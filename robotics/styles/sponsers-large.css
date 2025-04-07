@@ -1,0 +1,26 @@
+@media only screen and (min-width: 64rem){
+
+    #sponsers{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1rem;
+    }
+
+    .card{
+        grid-template-areas: 
+        "image name"
+        "image description"
+        "image membership";
+        margin: .5rem 1rem;
+        text-align: left;
+    }
+
+    .image_div{
+        margin-right: 1rem;
+        
+    }
+
+    .name_img{
+        margin-left: -12rem;
+    }
+}

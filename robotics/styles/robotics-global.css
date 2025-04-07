@@ -1,6 +1,7 @@
 :root{
     --main-orange-color: #ff6f00;
-    
+    --off-white-card-color: #eff1f1;
+
 }
 
 body{
@@ -17,8 +18,9 @@ header{
 }
 
 #title{
-    font-weight: bold;
+    font-weight:bold;
     font-size: xx-large;
+    font-family: 'Lora', serif;
 }
 
 ul{
@@ -55,13 +57,15 @@ nav li:hover{
 
 main{
     text-align: center;
-    background-color: rgb(238, 237, 237);
+    background-color: rgb(5, 5, 56);
     padding: 1rem 0;
+    color: white;
 }
 
 h1{
     font-family: "Agbalumo", system-ui;
     font-weight: 400;
+    margin-bottom: 2rem;
 }
 
 h2{
@@ -80,4 +84,13 @@ footer{
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+}
+
+@media screen and (min-width: 580px) {
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
 }

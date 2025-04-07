@@ -1,0 +1,14 @@
+@media only screen and (min-width: 38rem){
+    .card{
+        grid-template-areas: 
+        "image name"
+        "image description"
+        "image membership";
+        text-align: left;
+    }
+
+    .image_div{
+        padding-top: -5rem;
+        margin: 0 1rem 1rem 0;
+    }
+}

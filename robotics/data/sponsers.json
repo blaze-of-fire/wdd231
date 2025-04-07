@@ -2,33 +2,45 @@
     "sponsers": [
         {
             "logo": "images/washakie-museum.webp",
+            "img_width": "200",
             "name": "Washakie Museum",
-            "description": "The museum has been the host organization for the Robotics team since we started. It is a good relationship for both of us as we help get people in their doors, and they help us with their non-profit status"
+            "description": "The museum has been the host organization for the Robotics team since we started. It is a good relationship for both of us as we help get people in their doors, and they help us with their non-profit status",
+            "membership_level": "3"
         },
         {
             "logo": "images/cloud-peak-logo.webp",
+            "img_width": "200",
             "name": "Cloud Peak Chiropractic & Wellness",
-            "description": "Cloud Peak Chiropractic has also been a major sponser of ours, as they have donated a lot over the years and have helped us purchase micellaneus parts. We used to hold our meetings in their yoga studio."
+            "description": "Cloud Peak Chiropractic has also been a major sponser of ours, as they have donated a lot over the years and have helped us purchase micellaneus parts. We used to hold our meetings in their yoga studio.",
+            "membership_level": "3"
         },
         {
             "logo": "images/kiwanis-logo.webp",
+            "img_width": "150",
             "name": "Worland Kiwanis",
-            "description": "The local Kiwanis club is a significant sponser of our team. They have donated several thousand dollars to the team over the 4 years we have been active."
+            "description": "The local Kiwanis club is a significant sponser of our team. They have donated several thousand dollars to the team over the 4 years we have been active.",
+            "membership_level": "3"
         },
         {
-            "logo": "images/",
+            "logo": "images/rotary-logo.webp",
+            "img_width": "150",
             "name": "Worland Rotary",
-            "description": "Rotary was a major sponser, giving us 2,000 dollars this year to help support our efforts and team goals."
+            "description": "Rotary was a major sponser, giving us 2,000 dollars this year to help support our efforts and team goals.",
+            "membership_level": "3"
+        },
+        {
+            "logo": "images/range-logo.webp",
+            "img_width": "200",
+            "name": "Range Telephone Cooperative, Inc",
+            "description": "Range Telephone is another major sponser of the team. This year we are using a room in their basement as our meeting space. They have donated mioney to help purchase parts and tools, they also purchased the team's sweatshirts and T-shirts",
+            "membership_level": "3"
         },
         {
             "logo": "",
-            "name": "Range",
-            "description": "Range Telephone is another major sponser of the team. This year we are using a room in their basement as our meeting space. They have donated mioney to help purchase parts and tools, they also purchased the team's sweatshirts and T-shirts"
-        },
-        {
-            "logo": "",
+            "img_width": "",
             "name": "Newell Sargent Foundation",
-            "description": "The Newell Sargent Foundation is also a big sponser of our team over the course of the last few years they have donated about 2,000 dollars."
+            "description": "The Newell Sargent Foundation is also a big sponser of our team over the course of the last few years they have donated about 2,000 dollars.",
+            "membership_level": "2"
         }
     ]
 }
