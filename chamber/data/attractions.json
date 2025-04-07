@@ -4,65 +4,57 @@
             "title": "Sand Dunes",
             "name": "sand-dunes",
             "image": "images/sand-dunes.webp",
-            "address_part1": "1653 E 500 N",
-            "address_part2": "St. Anthony, Idaho 83445",
-            "description": ""
+            "address": "1653 E 500 N St. Anthony, Idaho 83445",
+            "description": "A 10,600-acre area of white quartz sand dunes with dunes reaching up to 400 ft."
         },
         {
             "title": "Upper Mesa Falls",
             "name": "upper-mesa-falls",
             "image": "images/upper-mesa-falls.webp",
-            "address_part1": "46 Hwy 20",
-            "address_part2": "Ashton Idaho 83420",
-            "description": ""
+            "address": "46 Hwy 20 Ashton Idaho 83420",
+            "description": "Upper Mesa Falls, a thunderous curtain of water as tall as a 10-story building."
         },
         {
             "title": "Teton River Temple",
             "name": "teton-river-temple.webp",
             "image": "images/teton-river-idaho-temple-rendering.webp",
-            "address_part1": "111 Teton River Temple St",
-            "address_part2": "Rexburg, Idaho  83440 United States",
-            "description": "The construction site of the teton river temple"
+            "address": "111 Teton River Temple St Rexburg, Idaho  83440 United States",
+            "description": "According to building plans, the Teton River Idaho Temple will be a three-story edifice of approximately 130,000 square feet."
         },
         {
             "title": "Sand Bar",
             "name": "sand-bar",
             "image": "images/sand-bar.webp",
-            "address_part1": "245 S 3rd E",
-            "address_part2": "St. Anthony, Idaho 83445",
-            "description": ""
+            "address": "245 S 3rd E St. Anthony, Idaho 83445",
+            "description": "The Sand Bar has been the local swimming hole for more than 60 years and has a fun tube slide and many other fun things you can try out."
         },
         {
             "title": "Fremont County Golf Course",
             "name": "fremont-county-golf-course",
             "image": "images/fremont-county-golf-course.webp",
-            "address_part1": "674 N 2780 E",
-            "address_part2": "St. Anthony, Idaho 83445",
-            "description": ""
+            "address": "674 N 2780 E St. Anthony, Idaho 83445",
+            "description": "The Fremont County Golf Course is a scenic 9-hole public course located in Saint Anthony, Idaho and offers stunning Teton views."
         },
         {
             "title": "Henry Fork Greenway",
             "name": "henry-fork-greenway",
             "image": "images/henrys-fork-greenway.webp",
-            "address_part1": "420 North Bridge Street",
-            "address_part2": "St. Anthony, Idaho 83445",
-            "description": "A nice boardwalk around the lake"
+            "address": "420 North Bridge Street St. Anthony, Idaho 83445",
+            "description": "A multi-use trail that runs along the Henry's Fork of the Snake River for many recreational activities."
         },
         {
             "title": "Monkey Rock",
             "name": "monkey-rock",
             "image": "images/monkey-rock-discover.webp",
-            "address_part1": "E 350 N",
-            "address_part2": "St. Anthony, Idaho 83445",
-            "description": ""
+            "address": "E 350 N St. Anthony, Idaho 83445",
+            "description": "A beautiful waterfall that when visited at the right time can be a very peaceful place to be in nature."
         },
         {
             "title": "Teton Dam Site",
             "name": "teton-dam-site",
             "image": "images/teton-dam-flood-discover.webp",
-            "address_part1": "12000 NE",
-            "address_part2": "Newdale, Idaho 83436",
-            "description": ""
+            "address": "12000 NE Newdale, Idaho 83436",
+            "description": "The Teton Dam, catastrophically failed on June 5, 1976, causing widespread flooding and damage. It is now a tourist site."
         }
     ]
 }

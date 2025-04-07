@@ -1,0 +1,32 @@
+@media only screen and (min-width: 64rem){
+
+    #the_locations{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .attractions_card{
+        grid-template-areas: 
+        "photograph name"
+        "photograph location"
+        "photograph description";
+        width: 98%;
+    }
+
+    .attractions_title{
+        margin-left: -18rem;
+    }
+
+    img:hover{
+        box-shadow: 2px 2px 8px 2px black;
+    }
+
+    .image_figure{
+        margin-top: 4rem;
+
+    }
+    
+    .learn_button{
+        width: 100%;
+    }
+}
