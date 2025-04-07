@@ -52,6 +52,7 @@ const displayAttractions = (locations) => {
         image.setAttribute("alt", `${attraction.name}`);
         image.setAttribute("width", "300");
         image.setAttribute("height", "auto");
+        image.setAttribute("loading", "lazy");
         image.setAttribute("class", "attraction_image");
 
         description.textContent = `${attraction.description}`;
