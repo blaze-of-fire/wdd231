@@ -7,8 +7,9 @@
         text-align: left;
     }
 
-    .image_div{
+    .the_image_div{
         padding-top: -5rem;
         margin: 0 1rem 1rem 0;
+        height: 200px;
     }
 }

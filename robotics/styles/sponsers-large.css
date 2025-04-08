@@ -10,17 +10,20 @@
         grid-template-areas: 
         "image name"
         "image description"
-        "image membership";
+        "membership";
         margin: .5rem 1rem;
         text-align: left;
     }
 
-    .image_div{
+    .the_image_div{
+        width: 200px;
+        height: 200px;
+        grid-area: image;
+        margin-top: 1.8rem;
         margin-right: 1rem;
-        
     }
 
-    .name_img{
+    .name{
         margin-left: -12rem;
     }
 }

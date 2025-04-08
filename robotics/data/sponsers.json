@@ -31,13 +31,13 @@
         {
             "logo": "images/range-logo.webp",
             "img_width": "200",
-            "name": "Range Telephone Cooperative, Inc",
+            "name": "Range Telephone",
             "description": "Range Telephone is another major sponser of the team. This year we are using a room in their basement as our meeting space. They have donated mioney to help purchase parts and tools, they also purchased the team's sweatshirts and T-shirts",
             "membership_level": "3"
         },
         {
-            "logo": "",
-            "img_width": "",
+            "logo": "images/image-unavailable.webp",
+            "img_width": "200",
             "name": "Newell Sargent Foundation",
             "description": "The Newell Sargent Foundation is also a big sponser of our team over the course of the last few years they have donated about 2,000 dollars.",
             "membership_level": "2"

@@ -1,7 +1,8 @@
 :root{
     --main-orange-color: #ff6f00;
     --off-white-card-color: #eff1f1;
-
+    --main-background-color: rgb(5, 5, 56);
+    --color-black: black;
 }
 
 body{
@@ -33,7 +34,7 @@ li{
     list-style: none;
     width: 100%;
     margin: 0 auto;
-    background-color: black;
+    background-color: var(--color-black);
     border-left: 1px solid rgb(77, 76, 76);
     border-right: 1px solid rgb(77, 76, 76);
 }
@@ -55,10 +56,12 @@ nav li:hover{
     background-color: rgb(77, 76, 76);
 }
 
+nav{overflow: hidden;}
+
 main{
     text-align: center;
-    background-color: rgb(5, 5, 56);
-    padding: 1rem 0;
+    background-color: var(--main-background-color);
+    padding: 1rem 0 3rem 0;
     color: white;
 }
 
@@ -84,6 +87,7 @@ footer{
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    border-top: 1.5rem solid var(--color-black);
 }
 
 @media screen and (min-width: 580px) {
