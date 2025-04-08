@@ -5,14 +5,14 @@
             "img_width": "200",
             "name": "Washakie Museum",
             "description": "The museum has been the host organization for the Robotics team since we started. It is a good relationship for both of us as we help get people in their doors, and they help us with their non-profit status",
-            "membership_level": "3"
+            "membership_level": "1"
         },
         {
             "logo": "images/cloud-peak-logo.webp",
             "img_width": "200",
             "name": "Cloud Peak Chiropractic & Wellness",
             "description": "Cloud Peak Chiropractic has also been a major sponser of ours, as they have donated a lot over the years and have helped us purchase micellaneus parts. We used to hold our meetings in their yoga studio.",
-            "membership_level": "3"
+            "membership_level": "1"
         },
         {
             "logo": "images/kiwanis-logo.webp",

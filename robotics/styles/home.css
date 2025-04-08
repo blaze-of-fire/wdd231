@@ -1,0 +1,33 @@
+.card{
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "image"
+    "description"
+    "membership";
+    background-color: var(--off-white-card-color);
+    padding: 1rem;
+    margin: 1.5rem .3rem 1rem .3rem;
+    border-radius: .5rem;
+    border: 1px solid white;
+    box-shadow: 0 0 10px white;
+}
+
+.name{
+    grid-area: name;
+}
+
+.the_image_div{
+    grid-area: image;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description{
+    grid-area: description;
+}
+
+.membership_level{
+    grid-area: membership;
+}

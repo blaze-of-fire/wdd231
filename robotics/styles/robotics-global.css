@@ -18,7 +18,7 @@ header{
     display: block;
 }
 
-#title{
+.title{
     font-weight:bold;
     font-size: xx-large;
     font-family: 'Lora', serif;
