@@ -1,3 +1,7 @@
+.hero_img{
+    width: 100%;
+}
+
 .card{
     display: grid;
     grid-template-areas: 
