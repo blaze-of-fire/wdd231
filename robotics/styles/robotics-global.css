@@ -19,7 +19,7 @@ header{
 }
 
 .title{
-    font-weight:bold;
+    font-weight: bold;
     font-size: xx-large;
     font-family: 'Lora', serif;
     padding: 0rem;
@@ -55,7 +55,6 @@ a{
     position: absolute;
     top: 1rem; left: 1rem;
     font-size: x-large;
-    font-weight: bold;
     background-color: #ff6f00;
     border: none;
 
@@ -75,14 +74,15 @@ nav li:hover{
     background-color: rgb(77, 76, 76);
 }
 
-nav ul{overflow: hidden;}
-
 nav {
     display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.5s ease-out;
     background-color: black;
 }
+
+nav ul{overflow: hidden;}
+
 
 ul {
     display: block;
@@ -125,6 +125,10 @@ footer{
     border-top: 1.5rem solid var(--color-black);
 }
 
+.gear{
+    margin-bottom: -.25rem;
+}
+
 @media only screen and (min-width: 580px) {
     header{
         display: flex;
@@ -151,9 +155,12 @@ footer{
     }
 
     li{
-        border-left: 1px solid rgb(77, 76, 76);
-        border-right: 1px solid rgb(77, 76, 76);
+        border-right: .12rem solid rgb(77, 76, 76);
         border-top: none;
         border-bottom: none;
+    }
+
+    li:last-child{
+        border-right: none;
     }
 }
