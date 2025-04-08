@@ -38,7 +38,8 @@ const displaySponsers = (sponsers) => {
 
         image.setAttribute("width", `${sponser.img_width}`);
         image.setAttribute("height", "auto");
-        
+        image.setAttribute("loading", "lazy");
+
         div.append(image);
         card.append(name, div, description, membershipLevel);
         sponserCards.append(card);
