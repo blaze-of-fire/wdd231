@@ -1,14 +1,20 @@
-const filepath = "./data/sponsers.json";
-const sponserCards = document.querySelector("#sponsers");
+const filepath = "./data/sponsors.json";
+const sponsorCards = document.querySelector("#sponsors");
 
-async function getSponserData() {
-    const response = await fetch(filepath);
-    const data = await response.json();
-    displaySponsers(data.sponsers);
+async function getSponsorData() {
+    try {
+        const response = await fetch(filepath);
+        const data = await response.json();
+        displaySponsors(data.sponsors);
+    }
+    catch (error) {
+        console.error("An error occurred:", error.message);
+        console.log("Fix the error.");
+    }
 }
 
-const displaySponsers = (sponsers) => {
-    sponsers.forEach(sponser => {
+const displaySponsors = (sponsors) => {
+    sponsors.forEach(sponsor => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let image;
@@ -18,32 +24,32 @@ const displaySponsers = (sponsers) => {
 
         card.setAttribute("class", "card");
         name.setAttribute("class", "name");
-        name.textContent = `${sponser.name}`;
+        name.textContent = `${sponsor.name}`;
         name.style.fontFamily = "'Lora', serif";
         name.style.color = "black";
         
-        description.textContent = `${sponser.description}`;
+        description.textContent = `${sponsor.description}`;
         description.setAttribute("class", "description");
         description.style.color = "black";
 
-        membershipLevel.textContent = `${sponser.membership_level}`;
+        membershipLevel.textContent = `${sponsor.membership_level}`;
         membershipLevel.setAttribute("class", "membership");
         membershipLevel.style.color = "black";
         div.setAttribute("class", "the_image_div");
 
 
         image = document.createElement("img");
-        image.setAttribute("src", `${sponser.logo}`);
-        image.setAttribute("alt", `${sponser.name} Logo`);
+        image.setAttribute("src", `${sponsor.logo}`);
+        image.setAttribute("alt", `${sponsor.name} Logo`);
 
-        image.setAttribute("width", `${sponser.img_width}`);
+        image.setAttribute("width", `${sponsor.img_width}`);
         image.setAttribute("height", "auto");
         image.setAttribute("loading", "lazy");
 
         div.append(image);
         card.append(name, div, description, membershipLevel);
-        sponserCards.append(card);
+        sponsorCards.append(card);
     });
 };
 
-getSponserData();
+getSponsorData();
