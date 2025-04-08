@@ -19,7 +19,7 @@ const displaySpotlights = (sponsors) => {
     const threeSponsors = shuffledArray.slice(0, 3);
     threeSponsors.forEach(oneSponsor => {
         let card = document.createElement("section");
-        let name = document.createElement("h3");
+        let name = document.createElement("h2");
         let image;
         let div = document.createElement("div");
         let description = document.createElement("p");
