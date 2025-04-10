@@ -49,6 +49,7 @@ members.getCoaches().forEach(coach => {
     image.setAttribute("alt", `${coach.name} Image`);
     image.setAttribute("width", "auto");
     image.setAttribute("height", "auto");
+    image.setAttribute("loading", "lazy");
 
     imageDiv.append(image);
 

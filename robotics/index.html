@@ -18,14 +18,15 @@
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/home-medium.css">
     <link rel="stylesheet" href="styles/home-large.css">
+    <link rel="icon" href="images/favicon-gear.ico" type="images/ico">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/spotlight.js" defer></script>
     <script src="scripts/date.js" defer></script>
 </head>
 <body>
-    <a class="skip_tag" href="#main">skip to main content</a>
+    <a class="skip_tag" href="#main">Skip to Main Content</a>
     <header>
-        <img src="images/mammoth-logo.webp" alt="mammoth-logo" width="200" height="auto">
+        <img src="images/mammoth-logo.webp" alt="mammoth-logo" width="200" height="auto" loading="lazy">
         <p class="title">Mammoth Mechanics</p>
         <button class="menu" aria-label="Open Menu"></button>
     </header>
@@ -40,23 +41,24 @@
     <main id="main">
         <h1>Home</h1>
         <picture>
-            <source srcset="images/hero-img.webp" media="(min-width: 426px)">
-            <img id="small_hero" src="images/hero-img-small-inpi.png" alt="hero_img" width="100%" height="auto">
+            <source srcset="images/hero-img.webp" media="(min-width: 426px)" loading="lazy">
+            <img id="small_hero" src="images/hero-img-small-inpi.png" alt="hero_img" width="100%" height="auto" loading="lazy">
         </picture>
         <h2>Awards</h2>
         <p>2025</p>
-        <p>2nd place aliance captain</p>
-        <p>2nd place inspire award</p>
+        <p>2nd place Alliance Captain</p>
+        <p>2nd place Inspire Award</p>
         <p>2024</p>
-        <p>2nd place aliance partner</p>
+        <p>2nd place Alliance Partner</p>
         <h2>Upcoming Events</h2>
+        <p>June 2025</p>
         <p>World Premier Event in Kentucky</p>
         <h2>Spotlight Sponsors</h2>
         <div id="spotlight_cards">
         </div>
     </main>
     <footer>
-        <p><span id="copyright_year"></span> <img class="gear" src="images/setting.svg" alt="gear icon" width="20" height="auto"> Carter Arnold <img class="gear" src="images/setting.svg" alt="gear icon" width="20" height="auto"> Worland WY</p>
+        <p><span id="copyright_year"></span> <img class="gear" src="images/setting.svg" alt="gear icon" width="20" height="auto" loading="lazy"> Carter Arnold <img class="gear" src="images/setting.svg" alt="gear icon" width="20" height="auto" loading="lazy"> Worland WY</p>
         <p id="lastModified"></p>
     </footer>
 </body>

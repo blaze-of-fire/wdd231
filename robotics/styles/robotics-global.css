@@ -13,7 +13,8 @@ body{
 .skip_tag{
     color: black;
     font-size: small;
-    background-color: #ff6f00;
+    font-weight: bold;
+    background-color: var(--main-orange-color);
     width: inherit;
     text-align: right;
 }
@@ -63,7 +64,7 @@ a{
     position: absolute;
     top: 1rem; left: 1rem;
     font-size: x-large;
-    background-color: #ff6f00;
+    background-color: var(--main-orange-color);
     border: none;
 
 }
