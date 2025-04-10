@@ -1,0 +1,24 @@
+@media only screen and (min-width: 64rem){
+
+    .team{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .coaches{
+        grid-template-columns: 1fr 1fr;
+        width: 44rem;
+        margin: 0 auto;
+    }
+
+    .img_container{
+        margin-top: 3rem;
+    }
+
+    .name{
+        font-family: "Agbalumo", system-ui;
+        font-weight: 400;
+        font-size: larger;
+        align-self: baseline;
+        margin: 0 0 0 -5rem
+    }
+}

@@ -1,0 +1,35 @@
+@media only screen and (min-width: 45rem){
+    
+    .team{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: .8rem;
+    }
+
+    .team_card{
+        grid-template-areas: 
+        "image name"
+        "image year";
+    }
+
+    .coaches{
+        display: grid;
+        padding: .8rem; 
+        grid-template-columns: 1fr 1fr;   
+    }
+
+    .name{
+        height: fit-content;
+        display: flex;
+        align-self: flex-end;
+        margin: 0 auto;
+    }
+
+    .year{
+        display: flex;
+        align-self: flex-start;
+        margin: 1rem auto;
+    }
+
+
+}

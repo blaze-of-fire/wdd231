@@ -33,7 +33,10 @@
     </nav>
     <main>
         <h1>Home</h1>
-        <img class="hero_img" src="images/hero-img.webp" alt="hero-img" width="1080" height="auto">
+        <picture>
+            <source srcset="images/hero-img.webp" media="(min-width: 400px)">
+            <img id="small_hero" src="images/hero-img-small.png" alt="hero_img" width="100%" height="auto">
+        </picture>
         <h2>Awards</h2>
         <p>2025</p>
         <p>2nd place aliance captain</p>
