@@ -18,6 +18,12 @@
         grid-template-columns: 1fr 1fr;   
     }
 
+    .coaches_card{
+        grid-template-areas: 
+        "image name"
+        "image year";
+    }
+
     .name{
         height: fit-content;
         display: flex;

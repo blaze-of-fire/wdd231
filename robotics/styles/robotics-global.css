@@ -66,6 +66,7 @@ a{
     font-size: x-large;
     background-color: var(--main-orange-color);
     border: none;
+    color: black;
 
 }
 
@@ -77,6 +78,10 @@ a{
     content: "X";
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+}
+
+.menu:hover{
+    background-color: var(--main-orange-color);
 }
 
 nav li:hover{

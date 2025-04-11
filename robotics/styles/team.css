@@ -25,6 +25,19 @@
     box-shadow: 0 0 10px 0 white;
 }
 
+.coaches_card{
+    background-color: rgb(7, 7, 75);
+    color: white;
+    padding: .5rem;
+    margin: 1rem .5rem;
+    display: grid;
+    grid-template-areas: 
+    "image"
+    "name"
+    "year";
+    box-shadow: 0 0 10px 0 white;
+}
+
 .name{
     grid-area: name;
 }
@@ -38,4 +51,8 @@
 
 .year{
     grid-area: year;
+}
+
+.primary_con{
+    width: 14rem;
 }

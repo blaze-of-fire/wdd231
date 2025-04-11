@@ -1,0 +1,16 @@
+@media only screen and (min-width: 38rem) {
+
+    #form_info {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    fieldset {
+        margin-right: 1rem;
+    }
+
+    #info {
+        width: 23rem;
+    }
+}

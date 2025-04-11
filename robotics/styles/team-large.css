@@ -10,6 +10,10 @@
         margin: 0 auto;
     }
 
+    .team_card:last-child{
+        grid-column: 2;
+    }
+
     .img_container{
         margin-top: 3rem;
     }
@@ -19,6 +23,6 @@
         font-weight: 400;
         font-size: larger;
         align-self: baseline;
-        margin: 0 0 0 -5rem
+        margin: 0 0 0 -6rem
     }
 }
