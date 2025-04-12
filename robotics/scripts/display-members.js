@@ -1,14 +1,7 @@
 import members from './members.mjs';
 
 const team = document.querySelector(".team");
-const coaches = document.querySelector(".coaches")
-
-function clear(selector) {
-    let element = document.querySelector(`.${selector}`);
-    if (element) {
-        element.innerHTML = "";
-    }
-}
+const coaches = document.querySelector(".coaches");
 
 function displayTeam() {
     members.getTeam().forEach(member => {

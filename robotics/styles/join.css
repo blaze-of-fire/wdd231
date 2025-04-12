@@ -117,3 +117,32 @@ button:hover {
     background-color: rgb(20, 67, 105);
 
 }
+
+.button_close::after{
+    content: "X";
+}
+
+.button_close{
+    background-color: rgb(145, 145, 248);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: larger;
+    padding: .4rem .7rem;
+    border: 2px solid rgb(67, 67, 180);
+    position: absolute;
+    top: 1.4rem; left: 1.4rem;
+    color: black;
+}
+
+.button_close:hover{
+    background-color: rgb(135, 135, 231);
+}
+
+dialog{
+    background-color: rgb(108, 108, 243);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    width: 310px;
+    color: black;
+}

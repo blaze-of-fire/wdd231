@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="styles/join-large.css">
     <link rel="icon" href="images/favicon-gear.ico" type="images/ico">
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
     <script src="scripts/date.js" defer></script>
 </head>
 <body>
@@ -64,19 +65,19 @@
             <div id="info">
                 <section class="info">
                     <h2>Meeting Details</h2>
-                    <button>Learn More</button>
+                    <button class="learn_btn1">Learn More</button>
                 </section>
                 <section class="info">
                     <h2>Requirements</h2>
-                    <button>Learn More</button>
+                    <button class="learn_btn2">Learn More</button>
                 </section>
                 <section class="info">
-                    <h2>This years robot</h2>
-                    <button>Learn More</button>
+                    <h2>This Year's Robot</h2>
+                    <button class="learn_btn3">Learn More</button>
                 </section>
-                <dialog class="meeting"></dialog>
-                <dialog class="requirements"></dialog>
-                <dialog class="robot"></dialog>
+                <dialog id="meeting"></dialog>
+                <dialog id="requirements"></dialog>
+                <dialog id="robot_modal"></dialog>
             </div>
         </div>
     </main>
