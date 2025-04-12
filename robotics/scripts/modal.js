@@ -1,12 +1,12 @@
 const modals = [
     {
         title: "Meeting Details",
-        content: "From the Kickoff on Thursday Sept, 18, 2025 to somewhere Around February We regularly meet on Thursdays from 4-6 pm at Range Telephone. Address 130 S 9th street Worland Wy 82401",
+        content: "From the Kickoff on Thursday, Sept. 18, 2025 to sometime in February, we regularly meet on Thursdays from 4-6 pm at Range Telephone. Address: 130 S 9th street Worland Wy 82401",
         id: "meeting",
     },
     {
         title: "Requirements",
-        content: "Requirements for Students wanting to join the robotics team: Need to be in 8th-12th Grade. Willing to learn and contribute to the team. Encourage and Respect teammates and mentors.",
+        content: "Requirements for students wanting to join the robotics team: Need to be in 8th-12th Grade, Willing to learn and contribute to the team, & Encourage and Respect teammates and mentors.",
         id: "requirements",
     },
     {
