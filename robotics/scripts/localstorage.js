@@ -22,6 +22,6 @@ function timestampCheck(theTime, message) {
         localStorage.setItem('timestamp', theTime.toString());
     }
     }
-}
+};
 
 timestampCheck(currentDay, msg);
