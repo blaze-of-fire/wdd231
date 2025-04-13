@@ -11,7 +11,7 @@ function timestampCheck(theTime, message) {
     else{
         let storedTimestamp = localStorage.getItem('timestamp');
 
-        if (Number(storedTimestamp) === Number(theTime)){
+        if (storedTimestamp === theTime.toString()){
             message.textContent = "Back so soon! Awesome!";
             localStorage.setItem('timestamp', theTime.toString());
 
