@@ -2,7 +2,7 @@ let currentTime = new Date();
 let currentDay = currentTime.getDay();
 const msg = document.getElementById("msg_using_timestamp");
 
-function timestampCheck(theTime, message) {
+function timestampChecker(theTime, message) {
     if(localStorage.getItem('timestamp') === null){
         localStorage.setItem('timestamp', currentDay.toString());
         message.textContent = "Welcome! Let us know if you have any questions.";
@@ -24,4 +24,4 @@ function timestampCheck(theTime, message) {
     }
 };
 
-timestampCheck(currentDay, msg);
+timestampChecker(currentDay, msg);
