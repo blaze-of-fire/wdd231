@@ -11,7 +11,7 @@ function timestampCheck(theTime, message) {
     else{
         let storedTimestamp = localStorage.getItem('timestamp');
 
-        if (storedTimestamp === theTime.toString()){
+        if (Number(storedTimestamp) === Number(theTime)){
             message.textContent = "Back so soon! Awesome!";
             localStorage.setItem('timestamp', theTime.toString());
 
@@ -22,4 +22,6 @@ function timestampCheck(theTime, message) {
         localStorage.setItem('timestamp', theTime.toString());
     }
     }
-};
+}
+
+timestampCheck(currentDay, msg);
