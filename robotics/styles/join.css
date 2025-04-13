@@ -146,3 +146,26 @@ dialog{
     width: 310px;
     color: black;
 }
+
+/* Thankyou page */
+
+#results{
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.thank_ptags{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: medium;
+
+}
+
+.the_results{
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: white;
+    font-size: larger;
+}
