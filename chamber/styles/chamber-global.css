@@ -11,6 +11,17 @@ body{
     margin: 0 auto;
 }
 
+.skip_tag{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: small;
+    background-color: var(--brown-main-color);
+    width: inherit;
+    text-align: right;
+    padding: .5rem;
+}
+
 header{
     background-color: var(--brown-main-color);
     padding: 1rem;
