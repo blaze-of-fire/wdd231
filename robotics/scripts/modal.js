@@ -36,7 +36,7 @@ const DisplayModal = (modals) => {
         `<div>
             <button class="button_close"></button>
             <h3>${modal.title}</h3>
-            <img id="robot" src="images/robot-img.webp" alt="robot-img" width="300" height="auto" loading="lazy">
+            <img id="robot" src="images/robot-img.webp" alt="robot-img" width="240" height="auto" loading="lazy">
         </div>`
         }
         else {
