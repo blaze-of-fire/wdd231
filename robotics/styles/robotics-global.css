@@ -35,6 +35,11 @@ header{
     margin: 0rem;
 }
 
+.nav ul li a.active {
+    color: var(--main-orange-color); /* Highlight color */
+    text-decoration: overline solid var(--main-orange-color);
+}
+
 li{
     list-style: none;
     width: 100%;

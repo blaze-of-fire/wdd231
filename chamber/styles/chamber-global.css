@@ -49,6 +49,11 @@ header{
     text-align: center;
 }
 
+#animateme ul li a.active {
+    color: var(--main-background-color);
+    text-decoration: overline solid var(--main-background-color);
+}
+
 #menu{
     position: absolute;
     top: .4rem; left: .4rem;
